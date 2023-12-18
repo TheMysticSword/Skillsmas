@@ -1,0 +1,57 @@
+{
+  "strings": {
+    "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Smoke Machine",
+    "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Create a lasting smoke zone that grants <style=cIsUtility>invisibility</style> to allies in its range.",
+
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_NAME": "Murder Party",
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION": "<style=cIsDamage>Slayer</style>. Fire a revolver shot for <style=cIsDamage>{Damage}% damage</style>. Kills <style=cIsUtility>reset the cooldown</style> and mark an enemy for <style=cIsUtility>{Mark Duration}</style> seconds up to {Max Chain Kills} times. Gain <style=cIsDamage>+{Bonus Per Mark Kill}% damage per marked enemy kill</style> for <style=cIsUtility>{Buff Duration}</style> seconds.",
+
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_NAME": "Bloodbath",
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_DESCRIPTION": "Fire <style=cIsDamage>{Shots}</style> revolver shots for <style=cIsDamage>{Damage}% damage</style> at <style=cIsHealth>hemorrhaging</style> enemies in vision.",
+
+    "TOOLBOT_SKILLSMAS_CRATE_NAME": "Shipping Crate",
+    "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "Toss a crate for <style=cIsDamage>{Damage}%</style> damage. <style=cIsUtility>Can be pushed around, used as a platform or to block projectiles.</style>",
+
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "Update Mode",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Become <style=cIsHealth>unable</style> to sprint, jump and attack for <style=cIsHealth>{Update Duration}</style> seconds, then recover <style=cIsHealing>{Healing}%</style> HP and gain <style=cIsDamage>+{Attack Speed}%</style> attack speed for <style=cIsUtility>{Buff Duration}</style> seconds.",
+
+    "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Energy Shield",
+    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Agile</style>. Create a wall that deals <style=cIsDamage>{Damage Per Second}%</style> damage per second and <style=cIsUtility>blocks most attacks</style>.",
+
+    "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Cryo Bolt",
+    "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Freezing</style>. Fire a <style=cIsUtility>short-range</style> bolt for <style=cIsDamage>{Damage}% damage</style>. Hold up to 4.",
+
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Lit Nano-Rocket",
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Charge up a <style=cIsDamage>superfast</style> nano-rocket that deals <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage.",
+
+    "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Brimstone",
+    "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Create a screen that hurts enemies for <style=cIsDamage>{Damage Per Second}% damage per second</style> and <style=cIsDamage>ignites</style> ally projectiles.",
+
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_NAME": "Thunderbolt",
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Create a pillar that periodically hurts nearby enemies for <style=cIsDamage>{Damage}% damage</style>.",
+
+    "MAGE_SKILLSMAS_SPECIAL_ICE_NAME": "Flash Frost",
+    "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Freezing</style>. Create a cold blast around yourself for <style=cIsDamage>{Damage}%</style> damage and gain <style=cIsHealing>{Barrier}% temporary barrier</style> per frozen character.",
+
+    "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
+    "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Dash forward to deal <style=cIsDamage>{Damage}%</style> damage to an enemy, executing at <style=cIsDamage>{Execute Threshold}%</style> HP and lower and regenerating <style=cIsHealing>{Healing}%</style> of your maximum health on kill.",
+
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Zip Fist",
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Fire your gauntlet forward, <style=cIsUtility>quickly pulling</style> you to the target after immediately retracting the gauntlet.",
+
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_NAME": "Reinforce",
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_DESCRIPTION": "<style=cIsUtility>Stop</style> temporary barrier decay and increase attack speed by <style=cIsDamage>{Attack Speed}%</style> for <style=cIsUtility>{Buff Duration}</style> seconds.",
+
+    "CROCO_SKILLSMAS_POISONBUBBLE_NAME": "Autonomous Organism",
+    "CROCO_SKILLSMAS_POISONBUBBLE_DESCRIPTION": "<style=cIsHealing>Poisonous</style>. Create a slowly-moving bubble that deals <style=cIsDamage>{Damage}%</style> damage per second to nearby enemies.",
+
+    "CROCO_SKILLSMAS_POISONEXTENSION_NAME": "Neutropenia",
+    "CROCO_SKILLSMAS_POISONEXTENSION_DESCRIPTION": "Release a deadly disease that clears enemy poison to spread it up to <style=cIsDamage>{Max Targets}</style> targets for <style=cIsUtility>{Duration Multiplier}x</style> duration.",
+
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_NAME": "Helping Hand",
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Give <style=cIsUtility>Defensive Microbots</style> to an ally for <style=cIsUtility>{Duration}</style> seconds.",
+
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Reuseable Supply Beacon",
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Request a <style=cIsUtility>permanent</style> Supply Beacon. <style=cIsUtility>Alternates</style> between the two of your chosen beacons."
+  }
+}
