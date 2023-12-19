@@ -264,29 +264,5 @@ namespace Skillsmas.Skills.Captain
                 return EntityStates.InterruptPriority.Skill;
             }
         }
-
-        public class LendMicrobotsSecondaryPressState : EntityStates.BaseState
-        {
-            public static float baseDuration = 0.1f;
-
-            public float duration;
-
-            public override void OnEnter()
-            {
-                base.OnEnter();
-                duration = baseDuration / attackSpeedStat;
-            }
-
-            public override void FixedUpdate()
-            {
-                base.FixedUpdate();
-                if (isAuthority && fixedAge >= duration) outer.SetNextStateToMain();
-            }
-
-            public override EntityStates.InterruptPriority GetMinimumInterruptPriority()
-            {
-                return EntityStates.InterruptPriority.Skill;
-            }
-        }
     }
 }
