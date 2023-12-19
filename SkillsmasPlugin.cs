@@ -26,7 +26,6 @@ namespace Skillsmas
     [BepInDependency(PrefabAPI.PluginGUID)]
     [BepInDependency(RecalculateStatsAPI.PluginGUID)]
     [BepInDependency(MysticsRisky2UtilsPlugin.PluginGUID)]
-    [BepInDependency("com.rune580.riskofoptions")]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     public class SkillsmasPlugin : BaseUnityPlugin
