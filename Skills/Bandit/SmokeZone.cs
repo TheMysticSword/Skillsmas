@@ -47,6 +47,8 @@ namespace Skillsmas.Skills.Bandit
 
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Bandit2/Bandit2BodyUtilityFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
+            
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ThrowSmokeDevice));
 
             zonePrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Bandit/SmokeZone/SmokeZone.prefab");
 

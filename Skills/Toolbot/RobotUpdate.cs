@@ -104,6 +104,8 @@ namespace Skillsmas.Skills.Toolbot
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Toolbot/ToolbotBodyUtilityFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ToolbotUpdating));
+
             ToolbotUpdating.endEffectPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/MUL-T/RobotUpdate/RobotUpdateFinish.prefab");
             ToolbotUpdating.endEffectPrefab.AddComponent<EffectComponent>();
             var vfxAttributes = ToolbotUpdating.endEffectPrefab.AddComponent<VFXAttributes>();

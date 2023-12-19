@@ -79,6 +79,8 @@ namespace Skillsmas.Skills.Mage
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyPrimaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FireIceBolt));
+
             var ghost = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/CryoBolt/CryoBoltGhost.prefab");
             ghost.AddComponent<ProjectileGhostController>();
             var objectScaleCurve = ghost.transform.Find("Crystal").gameObject.AddComponent<ObjectScaleCurve>();

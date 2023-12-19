@@ -59,6 +59,8 @@ namespace Skillsmas.Skills.Loader
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Loader/LoaderBodySecondaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FireQuickHook));
+
             FireQuickHook.projectilePrefabStatic = PrefabAPI.InstantiateClone(Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Loader/LoaderHook.prefab").WaitForCompletion(), "LoaderQuickHook");
             SkillsmasContent.Resources.projectilePrefabs.Add(FireQuickHook.projectilePrefabStatic);
             FireQuickHook.projectilePrefabStatic.GetComponent<ProjectileGrappleController>().ownerHookStateType = new EntityStates.SerializableEntityStateType(typeof(FireQuickHook));

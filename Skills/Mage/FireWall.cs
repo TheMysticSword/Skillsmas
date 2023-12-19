@@ -98,6 +98,8 @@ namespace Skillsmas.Skills.Mage
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyUtilityFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(PrepFireWall));
+
             Utils.CopyChildren(SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/FireWall/FireWall.prefab"), fireWallPrefab);
             var teamFilter = fireWallPrefab.AddComponent<TeamFilter>();
             var nbd = fireWallPrefab.AddComponent<NetworkedBodyAttachment>();

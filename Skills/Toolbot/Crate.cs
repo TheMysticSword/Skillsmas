@@ -68,6 +68,8 @@ namespace Skillsmas.Skills.Toolbot
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Toolbot/ToolbotBodySecondaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(AimCrate));
+
             crateGhostPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/MUL-T/Crate/CrateGhost.prefab");
             crateGhostPrefab.AddComponent<ProjectileGhostController>();
 

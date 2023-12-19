@@ -88,6 +88,8 @@ namespace Skillsmas.Skills.Engi
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Engi/EngiBodyPrimaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ChannelEnergyShield));
+
             Utils.CopyChildren(SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Engi/EnergyShield/EnergyShield.prefab"), shieldPrefab);
             var hitBoxGroup = shieldPrefab.AddComponent<HitBoxGroup>();
             hitBoxGroup.hitBoxes = new[]

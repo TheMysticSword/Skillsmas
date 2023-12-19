@@ -128,6 +128,9 @@ namespace Skillsmas.Skills.Bandit
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Bandit2/Bandit2BodySpecialFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(PrepSidearmChainKillBuffRevolver));
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FireSidearmChainKillBuffRevolver));
+
             PrepSidearmChainKillBuffRevolver.crosshairOverridePrefabStatic = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Bandit2/Bandit2CrosshairPrepRevolver.prefab").WaitForCompletion();
 
             FireSidearmChainKillBuffRevolver.effectPrefabStatic = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Bandit2/MuzzleflashBandit2.prefab").WaitForCompletion();

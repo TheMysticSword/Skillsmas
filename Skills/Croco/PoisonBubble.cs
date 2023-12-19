@@ -72,6 +72,8 @@ namespace Skillsmas.Skills.Croco
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Croco/CrocoBodyUtilityFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FirePoisonBubbleProjectile));
+
             projectilePrefabGhost = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Acrid/PoisonBubble/BubbleProjectileGhost.prefab");
             projectilePrefabGhost.AddComponent<ProjectileGhostController>();
             var objectScaleCurve = projectilePrefabGhost.transform.Find("Scaler").gameObject.AddComponent<ObjectScaleCurve>();

@@ -59,7 +59,10 @@ namespace Skillsmas.Skills.Captain
 
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Captain/CaptainSecondarySkillFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
-
+            
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(LendMicrobotsState));
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(LendMicrobotsPrimaryPressState));
+            
             targetIndicatorPrefab = PrefabAPI.InstantiateClone(LegacyResourcesAPI.Load<GameObject>("Prefabs/WoodSpriteIndicator"), "Skillsmas_LendMicrobotsIndicator", false);
             targetIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().sprite = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/Skills/Captain/LendMicrobots/texLendMicrobotsIndicator.png");
             targetIndicatorPrefab.GetComponentInChildren<SpriteRenderer>().color = new Color32(178, 255, 253, 255);

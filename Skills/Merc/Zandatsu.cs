@@ -100,6 +100,9 @@ namespace Skillsmas.Skills.Merc
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Merc/MercBodySpecialFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ZandatsuDash));
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ZandatsuHit));
+
             killEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Bandit2/Bandit2ResetEffect.prefab").WaitForCompletion();
 
             GlobalEventManager.onCharacterDeathGlobal += GlobalEventManager_onCharacterDeathGlobal;

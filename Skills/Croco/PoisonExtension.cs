@@ -88,6 +88,8 @@ namespace Skillsmas.Skills.Croco
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Croco/CrocoBodySpecialFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FirePoisonExtensionProjectile));
+
             projectilePrefab = PrefabAPI.InstantiateClone(Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Croco/CrocoDiseaseProjectile.prefab").WaitForCompletion(), "Skillsmas_PoisonExtensionProjectile");
             projectilePrefab.AddComponent<DamageAPI.ModdedDamageTypeHolderComponent>().Add(poisonExtensionFirstHitDamageType);
             Object.Destroy(projectilePrefab.GetComponent<ProjectileProximityBeamController>());

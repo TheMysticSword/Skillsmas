@@ -81,6 +81,9 @@ namespace Skillsmas.Skills.Mage
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySecondaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ChargeFlameBomb));
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(ThrowFlameBomb));
+
             var ghost = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/FlameBomb/FlameBombGhost.prefab");
             ghost.AddComponent<ProjectileGhostController>();
             ghost.AddComponent<DetachTrailOnDestroy>().targetTrailRenderers = new[]

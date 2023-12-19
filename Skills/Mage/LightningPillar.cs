@@ -108,6 +108,8 @@ namespace Skillsmas.Skills.Mage
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyUtilityFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(PrepLightningPillar));
+
             Utils.CopyChildren(SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/LightningPillar/LightningPillar.prefab"), lightningPillarPrefab);
             var teamFilter = lightningPillarPrefab.AddComponent<TeamFilter>();
             var nbd = lightningPillarPrefab.AddComponent<NetworkedBodyAttachment>();

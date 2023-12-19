@@ -68,6 +68,8 @@ namespace Skillsmas.Skills.Captain
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Captain/CaptainSpecialSkillFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(SetupSupplyDropReuseable));
+
             On.EntityStates.Captain.Weapon.CallSupplyDropBase.OnEnter += CallSupplyDropBase_OnEnter;
         }
 

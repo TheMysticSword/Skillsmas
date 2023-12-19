@@ -69,6 +69,8 @@ namespace Skillsmas.Skills.Loader
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Loader/LoaderBodySpecialFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(StopBarrierDecayState));
+
             StopBarrierDecayState.muzzleFlashPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Loader/OmniImpactVFXLoaderLightning.prefab").WaitForCompletion();
         }
 
