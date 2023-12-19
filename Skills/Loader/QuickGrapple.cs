@@ -14,7 +14,7 @@ namespace Skillsmas.Skills.Loader
             SkillsmasPlugin.PluginGUID,
             SkillsmasPlugin.PluginName,
             SkillsmasPlugin.config,
-            "Loader: Quick Fist",
+            "Loader: Zip Fist",
             "Launch Power",
             7500f,
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -23,7 +23,7 @@ namespace Skillsmas.Skills.Loader
             SkillsmasPlugin.PluginGUID,
             SkillsmasPlugin.PluginName,
             SkillsmasPlugin.config,
-            "Loader: Quick Fist",
+            "Loader: Zip Fist",
             "Antigravity Duration",
             0.3f,
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -39,7 +39,7 @@ namespace Skillsmas.Skills.Loader
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireQuickHook));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;
             SetUpValuesAndOptions(
-                "Loader: Quick Fist",
+                "Loader: Zip Fist",
                 baseRechargeInterval: 5f,
                 baseMaxStock: 1,
                 rechargeStock: 1,
