@@ -1,6 +1,7 @@
 {
   "name": "Skillsmas",
   "version_number": "1.0.0",
+  "website_url": "https://github.com/TheMysticSword/Skillsmas",
   "description": "Adds new skills. Has nothing to do with Christmas. Sorry!",
   "dependencies": [
     "bbepis-BepInExPack-5.4.1905",
