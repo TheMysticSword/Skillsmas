@@ -22,7 +22,7 @@ namespace Skillsmas.Skills.Croco
             SkillsmasPlugin.config,
             "Acrid: Autonomous Organism",
             "Damage",
-            100f,
+            200f,
             stringsToAffect: new List<string>
             {
                 "CROCO_SKILLSMAS_POISONBUBBLE_DESCRIPTION"
