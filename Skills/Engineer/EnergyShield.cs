@@ -139,6 +139,7 @@ namespace Skillsmas.Skills.Engi
                 ownerBody = attachedBody;
                 overlapAttack.attacker = attachedBody.gameObject;
                 overlapAttack.teamIndex = attachedBody.teamComponent.teamIndex;
+                resetInterval = 1f / hitFrequency / attachedBody.attackSpeed;
             }
 
             public void FixedUpdate()
