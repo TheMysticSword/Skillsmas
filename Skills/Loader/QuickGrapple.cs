@@ -34,7 +34,7 @@ namespace Skillsmas.Skills.Loader
             skillDef.skillName = "Skillsmas_QuickGrapple";
             skillDef.skillNameToken = "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME";
             skillDef.skillDescriptionToken = "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION";
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Junk/Common/texBuffTempestSpeedIcon.png").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/ZipFist.png");
             skillDef.activationStateMachineName = "Hook";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireQuickHook));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;

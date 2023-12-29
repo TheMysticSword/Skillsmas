@@ -50,7 +50,7 @@ namespace Skillsmas.Skills.Mage
             {
                 "KEYWORD_FREEZING"
             };
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/CryoBolt.jpg");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/CryoBolt.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireIceBolt));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;

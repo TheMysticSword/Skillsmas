@@ -56,7 +56,7 @@ namespace Skillsmas.Skills.Mage
             {
                 "KEYWORD_IGNITE"
             };
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/LitNanoRocket.jpg");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/LitNanoRocket.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(ChargeFlameBomb));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;
