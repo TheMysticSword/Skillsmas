@@ -70,7 +70,17 @@ namespace Skillsmas.Skills.Captain
 
             SkillsmasContent.Resources.entityStateTypes.Add(typeof(SetupSupplyDropReuseable));
 
+            On.RoR2.CharacterBody.Start += CharacterBody_Start;
             On.EntityStates.Captain.Weapon.CallSupplyDropBase.OnEnter += CallSupplyDropBase_OnEnter;
+        }
+
+        private void CharacterBody_Start(On.RoR2.CharacterBody.orig_Start orig, CharacterBody self)
+        {
+            if (self.skillLocator && self.skillLocator.special && self.skillLocator.special.skillDef.skillName == skillDef.skillName)
+            {
+                self.skillLocator.specialBonusStockOverrideSkill = self.skillLocator.special;
+            }
+            orig(self);
         }
 
         private void CallSupplyDropBase_OnEnter(On.EntityStates.Captain.Weapon.CallSupplyDropBase.orig_OnEnter orig, EntityStates.Captain.Weapon.CallSupplyDropBase self)
