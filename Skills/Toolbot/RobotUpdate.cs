@@ -131,15 +131,10 @@ namespace Skillsmas.Skills.Toolbot
 
                 if (isAuthority)
                 {
-                    void CancelSkill(GenericSkill skillSlot)
-                    {
-                        if (skillSlot && skillSlot.stateMachine.state.GetType() == skillSlot.activationState.stateType)
-                        {
-                            skillSlot.stateMachine.SetNextStateToMain();
-                        }
-                    }
-                    CancelSkill(skillLocator.primary);
-                    CancelSkill(skillLocator.secondary);
+                    var weaponStateMachine = EntityStateMachine.FindByCustomName(gameObject, "Weapon");
+                    if (weaponStateMachine) weaponStateMachine.SetNextStateToMain();
+                    weaponStateMachine = EntityStateMachine.FindByCustomName(gameObject, "Weapon2");
+                    if (weaponStateMachine) weaponStateMachine.SetNextStateToMain();
 
                     if (inputBank)
                     {
