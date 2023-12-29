@@ -17,7 +17,7 @@ This mod adds 18 new skills.
 | Artificer | Special | Flash Frost | **Freezing.** Create a cold blast around yourself for **800%** damage and gain **12% temporary barrier** per frozen character. | 8s |
 | Loader | Secondary | Zip Fist | Fire your gauntlet forward, **quickly pulling** you to the target after immediately retracting the gauntlet. | 5s |
 | Loader | Special | Reinforce | **Stop** barrier decay and increase attack speed by **40%** for **7** seconds. | 20s |
-| Acrid | Utility | Autonomous Organism | **Poisonous.** Create a slowly-moving bubble that deals **100%** damage per second to nearby enemies. | 15s |
+| Acrid | Utility | Autonomous Organism | **Poisonous.** Create a slowly-moving bubble that deals **200%** damage per second to nearby enemies. | 15s |
 | Acrid | Special | Neutropenia | Release a deadly disease that clears enemy poison to spread it up to **20** targets for **4x** duration. | 10s |
 | Captain | Secondary | Helping Hand | Give **Defensive Microbots** to an ally for **10** seconds. | 12s |
 | Captain | Special | Reuseable Supply Beacon | Request a **permanent** Supply Beacon. **Alternates** between the two of your chosen beacons. | 120s |
