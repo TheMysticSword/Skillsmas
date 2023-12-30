@@ -1,1 +1,57 @@
+{
+  "strings": {
+    "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Máquinha de Fumaça",
+    "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Crie uma zona de fumaça duradoura que garante <style=cIsUtility>invisibilidade</style> aos aliados em sua área.",
 
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_NAME": "Festa do Assassinato",
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION": "<style=cIsDamage>Assassino</style>. Dispare um tiro de revólver que causa <style=cIsDamage>{Damage}% damage</style>. Abates <style=cIsUtility>reiniciam o tempo de recarga</style> e marcam o inimigo por <style=cIsUtility>{Mark Duration}</style> segundos até {Max Chain Kills} vezes. Ganhe <style=cIsDamage>+{Bonus Per Mark Kill}% de dano por inimigo marcado abatido</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_NAME": "Banho de Sangue",
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_DESCRIPTION": "Dispare <style=cIsDamage>{Shots}</style> tiros de revólver que causam <style=cIsDamage>{Damage}% de dano</style> nos inimigos com <style=cIsHealth>hemorragia</style> em seu campo de visão.",
+
+    "TOOLBOT_SKILLSMAS_CRATE_NAME": "Caixa de Remessa",
+    "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "Lance uma caixa, causando <style=cIsDamage>{Damage}%</style> de dano. <style=cIsUtility>Pode ser empurrada, usada como plataforma ou para bloquear projéteis.</style>",
+
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "Modo de Atualização",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Torne-se <style=cIsHealth>incapaz</style> de correr, pular e atacar por <style=cIsHealth>{Update Duration}</style> segundos, então recupere <style=cIsHealing>{Healing}%</style> de HP e ganhe <style=cIsDamage>+{Attack Speed}%</style> de velocidade de ataque por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Escudo de Energia",
+    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Ágil</style>. Posicione uma parede que causa <style=cIsDamage>{Damage Per Second}%</style> de dano por segundo e <style=cIsUtility>bloqueia a maioria dos ataques</style>.",
+
+    "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Raio Frígido",
+    "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Dispare um raio de <style=cIsUtility>curto alcance</style> que causa <style=cIsDamage>{Damage}% de dano</style>. Máximo de 4.",
+
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Nanofoguete Intenso",
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Incendiário</style>. Carregue um nanofoguete <style=cIsDamage>superveloz</style> que causa <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de dano.",
+
+    "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Cortina de Enxofre",
+    "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Incendiário</style>. Crie uma tela que causa <style=cIsDamage>{Damage Per Second}% de dano por segundo</style> e <style=cIsDamage>incendeia</style> projéteis aliados.",
+
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_NAME": "Relâmpago",
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Atordoante</style>. Crie um pilar que periodicamente causa dano aos inimigos próximos por <style=cIsDamage>{Damage}% de dano</style>.",
+
+    "MAGE_SKILLSMAS_SPECIAL_ICE_NAME": "Geada Instantânea",
+    "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Crie uma explosão gélida ao seu redor causando <style=cIsDamage>{Damage}%</style> de dano e ganhando <style=cIsHealing>{Barrier}% de barreira temporária</style> por alvo congelado.",
+
+    "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
+    "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Realize uma investida para frente, causando <style=cIsDamage>{Damage}%</style> de dano ao inimigo, executando-o com <style=cIsDamage>{Execute Threshold}%</style> de HP ou abaixo e regenerando <style=cIsHealing>{Healing}%</style> de sua saúde máxima ao abater.",
+
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Garra de Avanço Rápido",
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Dispara a garra adiante, <style=cIsUtility>puxando rapidamente</style> você até o alvo após recolher imediatamente a manopla.",
+
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_NAME": "Reforçar",
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_DESCRIPTION": "<style=cIsUtility>Pare</style> temporariamente a queda da barreira e aumente a velocidade de ataque em <style=cIsDamage>{Attack Speed}%</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "CROCO_SKILLSMAS_POISONBUBBLE_NAME": "Organismo Autônomo",
+    "CROCO_SKILLSMAS_POISONBUBBLE_DESCRIPTION": "<style=cIsHealing>Venenoso</style>. Crie uma lenta bolha que causa <style=cIsDamage>{Damage}%</style> de dano por segundo aos inimigos próximos.",
+
+    "CROCO_SKILLSMAS_POISONEXTENSION_NAME": "Neutropenia",
+    "CROCO_SKILLSMAS_POISONEXTENSION_DESCRIPTION": "Libere uma doença mortal que limpa o veneno do inimigo para se espalhar em até <style=cIsDamage>{Max Targets}</style> alvos por <style=cIsUtility>{Duration Multiplier}x</style> a duração.",
+
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_NAME": "Mão Amiga",
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Dá a um aliado <style=cIsUtility>Microrrobôs Defensivos</style> por <style=cIsUtility>{Duration}</style> segundos.",
+
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Farol de Suprimento Reutilizável",
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Peça um <style=cIsUtility>permanent</style> Farol de Suprimento. <style=cIsUtility>Alterna</style> entre os dois faróis escolhidos."
+  }
+}
