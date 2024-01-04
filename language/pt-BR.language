@@ -4,7 +4,7 @@
     "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Crie uma zona de fumaça duradoura que garante <style=cIsUtility>invisibilidade</style> aos aliados em sua área.",
 
     "BANDIT2_SKILLSMAS_CHAINKILLBUFF_NAME": "Festa do Assassinato",
-    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION": "<style=cIsDamage>Assassino</style>. Dispare um tiro de revólver que causa <style=cIsDamage>{Damage}% damage</style>. Abates <style=cIsUtility>reiniciam o tempo de recarga</style> e marcam o inimigo por <style=cIsUtility>{Mark Duration}</style> segundos até {Max Chain Kills} vezes. Ganhe <style=cIsDamage>+{Bonus Per Mark Kill}% de dano por inimigo marcado abatido</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION": "<style=cIsDamage>Assassino</style>. Dispare um tiro de revólver que causa <style=cIsDamage>{Damage}% de dano</style>. Abates <style=cIsUtility>reiniciam o tempo de recarga</style> e marcam o inimigo por <style=cIsUtility>{Mark Duration}</style> segundos até {Max Chain Kills} vezes. Ganhe <style=cIsDamage>+{Bonus Per Mark Kill}% de dano por inimigo marcado abatido</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
 
     "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_NAME": "Banho de Sangue",
     "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_DESCRIPTION": "Dispare <style=cIsDamage>{Shots}</style> tiros de revólver que causam <style=cIsDamage>{Damage}% de dano</style> nos inimigos com <style=cIsHealth>hemorragia</style> em seu campo de visão.",
@@ -13,7 +13,7 @@
     "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "Lance uma caixa, causando <style=cIsDamage>{Damage}%</style> de dano. <style=cIsUtility>Pode ser empurrada, usada como plataforma ou para bloquear projéteis.</style>",
 
     "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "Modo de Atualização",
-    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Torne-se <style=cIsHealth>incapaz</style> de correr, pular e atacar por <style=cIsHealth>{Update Duration}</style> segundos, então recupere <style=cIsHealing>{Healing}%</style> de HP e ganhe <style=cIsDamage>+{Attack Speed}%</style> de velocidade de ataque por <style=cIsUtility>{Buff Duration}</style> segundos.",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Torne-se <style=cIsHealth>incapaz</style> de correr, pular e atacar por <style=cIsHealth>{Update Duration}</style> segundos, então recupere <style=cIsHealing>{Healing}%</style> de PV e ganhe <style=cIsDamage>+{Attack Speed}%</style> de velocidade de ataque por <style=cIsUtility>{Buff Duration}</style> segundos.",
 
     "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Escudo de Energia",
     "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Ágil</style>. Posicione uma parede que causa <style=cIsDamage>{Damage Per Second}%</style> de dano por segundo e <style=cIsUtility>bloqueia a maioria dos ataques</style>.",
@@ -34,7 +34,7 @@
     "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Crie uma explosão gélida ao seu redor causando <style=cIsDamage>{Damage}%</style> de dano e ganhando <style=cIsHealing>{Barrier}% de barreira temporária</style> por alvo congelado.",
 
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
-    "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Realize uma investida para frente, causando <style=cIsDamage>{Damage}%</style> de dano ao inimigo, executando-o com <style=cIsDamage>{Execute Threshold}%</style> de HP ou abaixo e regenerando <style=cIsHealing>{Healing}%</style> de sua saúde máxima ao abater.",
+    "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Realize uma investida para frente, causando <style=cIsDamage>{Damage}%</style> de dano ao inimigo, executando-o com <style=cIsDamage>{Execute Threshold}%</style> de PV ou abaixo e regenerando <style=cIsHealing>{Healing}%</style> de sua saúde máxima ao abater.",
 
     "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Garra de Avanço Rápido",
     "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Dispara a garra adiante, <style=cIsUtility>puxando rapidamente</style> você até o alvo após recolher imediatamente a manopla.",
