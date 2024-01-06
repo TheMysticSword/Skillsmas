@@ -52,6 +52,8 @@
     "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Give <style=cIsUtility>Defensive Microbots</style> to an ally for <style=cIsUtility>{Duration}</style> seconds.",
 
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Reuseable Supply Beacon",
-    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Request a <style=cIsUtility>permanent</style> Supply Beacon. <style=cIsUtility>Alternates</style> between the two of your chosen beacons."
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Request a <style=cIsUtility>permanent</style> Supply Beacon. <style=cIsUtility>Alternates</style> between the two of your chosen beacons.",
+
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Crystallize</style><style=cSub>Create crystals on hit that grant temporary barrier equal to <style=cIsHealing>{Fractional Barrier}%</style> of maximum health on pickup.</style>"
   }
 }

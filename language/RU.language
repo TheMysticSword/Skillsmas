@@ -52,6 +52,8 @@
     "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Даёт <style=cIsUtility>Защитных микроботов</style> союзнику на <style=cIsUtility>{Duration}</style> секунд.",
 
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Многоразовый маяк снабжения",
-    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Запрашивает <style=cIsUtility>постоянный</style> маяк снабжения. <style=cIsUtility>Чередуется</style> между вашими двумя выбранными маяками."
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Запрашивает <style=cIsUtility>постоянный</style> маяк снабжения. <style=cIsUtility>Чередуется</style> между вашими двумя выбранными маяками.",
+
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Кристаллизация</style><style=cSub>При попадании создаёт кристаллы. При подборе кристаллы дают временный барьер, равный <style=cIsHealing>{Fractional Barrier}%</style> от максимального здоровья.</style>"
   }
 }
