@@ -1,3 +1,11 @@
+﻿## 1.1.0
+* Added 4 new Artificer skills:
+	* Geode Bolt
+	* Moulded Nano-Boulder
+	* Tectonic Shift
+	* Superbolide
+* Added 1 new keyword:
+	* Crystallize
 ## 1.0.1
 * Engineer's Energy Shield now scales with attack speed
 * Acrid's Autonomous Organism DPS increased from 100% to 200%
