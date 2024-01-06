@@ -84,6 +84,7 @@ namespace Skillsmas
                 MysticsRisky2Utils.SoftDependencies.SoftDependencyManager.RiskOfOptionsDependency.RegisterModInfo(PluginGUID, PluginName, "Adds new skills. Has nothing to do with Christmas. Sorry.", iconSprite);
             }
 
+            MysticsRisky2Utils.ContentManagement.ContentLoadHelper.PluginAwakeLoad<BaseGenericLoadable>(executingAssembly);
             MysticsRisky2Utils.ContentManagement.ContentLoadHelper.PluginAwakeLoad<MysticsRisky2Utils.BaseAssetTypes.BaseItem>(executingAssembly);
             MysticsRisky2Utils.ContentManagement.ContentLoadHelper.PluginAwakeLoad<MysticsRisky2Utils.BaseAssetTypes.BaseEquipment>(executingAssembly);
             MysticsRisky2Utils.ContentManagement.ContentLoadHelper.PluginAwakeLoad<MysticsRisky2Utils.BaseAssetTypes.BaseBuff>(executingAssembly);
@@ -117,6 +118,7 @@ namespace Skillsmas
             // Add content loading dispatchers to the content load helper
             System.Action[] loadDispatchers = new System.Action[]
             {
+                () => contentLoadHelper.DispatchLoad<object>(SkillsmasPlugin.executingAssembly, typeof(BaseGenericLoadable), null),
                 () => contentLoadHelper.DispatchLoad<ItemDef>(SkillsmasPlugin.executingAssembly, typeof(MysticsRisky2Utils.BaseAssetTypes.BaseItem), x => contentPack.itemDefs.Add(x)),
                 () => contentLoadHelper.DispatchLoad<EquipmentDef>(SkillsmasPlugin.executingAssembly, typeof(MysticsRisky2Utils.BaseAssetTypes.BaseEquipment), x => contentPack.equipmentDefs.Add(x)),
                 () => contentLoadHelper.DispatchLoad<BuffDef>(SkillsmasPlugin.executingAssembly, typeof(MysticsRisky2Utils.BaseAssetTypes.BaseBuff), x => contentPack.buffDefs.Add(x)),
@@ -171,6 +173,7 @@ namespace Skillsmas
             // Call "AfterContentPackLoaded" methods
             loadDispatchers = new System.Action[]
             {
+                () => MysticsRisky2Utils.ContentManagement.ContentLoadHelper.InvokeAfterContentPackLoaded<BaseGenericLoadable>(SkillsmasPlugin.executingAssembly),
                 () => MysticsRisky2Utils.ContentManagement.ContentLoadHelper.InvokeAfterContentPackLoaded<MysticsRisky2Utils.BaseAssetTypes.BaseItem>(SkillsmasPlugin.executingAssembly),
                 () => MysticsRisky2Utils.ContentManagement.ContentLoadHelper.InvokeAfterContentPackLoaded<MysticsRisky2Utils.BaseAssetTypes.BaseEquipment>(SkillsmasPlugin.executingAssembly),
                 () => MysticsRisky2Utils.ContentManagement.ContentLoadHelper.InvokeAfterContentPackLoaded<MysticsRisky2Utils.BaseAssetTypes.BaseBuff>(SkillsmasPlugin.executingAssembly),
