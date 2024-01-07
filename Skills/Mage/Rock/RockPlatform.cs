@@ -112,6 +112,15 @@ namespace Skillsmas.Skills.Mage.Rock
             objectTransformCurve.translationCurveY = AnimationCurve.EaseInOut(0f, -5f, 1f, 0f);
             objectTransformCurve.timeMax = objectScaleCurve.timeMax;
 
+            var sdStone = Addressables.LoadAssetAsync<SurfaceDef>("RoR2/Base/Common/sdStone.asset").WaitForCompletion();
+            foreach (var collider in rockPlatformPrefab.transform.Find("Mover/mdlRockPlatform/Collision").GetComponentsInChildren<Collider>())
+            {
+                var surfaceDefProvider = collider.GetComponent<SurfaceDefProvider>();
+                if (surfaceDefProvider != null) continue;
+                surfaceDefProvider = collider.gameObject.AddComponent<SurfaceDefProvider>();
+                surfaceDefProvider.surfaceDef = sdStone;
+            }
+
             SkillsmasRockPlatformController.lifetimeExpiredEffectPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Rock/RockPlatform/RockPlatformLifetimeExpiredEffect.prefab");
             SkillsmasRockPlatformController.lifetimeExpiredEffectPrefab.AddComponent<DestroyOnTimer>().duration = 5f;
             var shakeEmitter = SkillsmasRockPlatformController.lifetimeExpiredEffectPrefab.AddComponent<ShakeEmitter>();

@@ -142,6 +142,15 @@ namespace Skillsmas.Skills.Toolbot
 
             crateController.disabledCollider = crateProjectilePrefab.transform.Find("Collider").GetComponent<Collider>();
 
+            var sdMetal = Addressables.LoadAssetAsync<SurfaceDef>("RoR2/Base/Common/sdMetal.asset").WaitForCompletion();
+            foreach (var collider in crateProjectilePrefab.transform.Find("Collider").GetComponentsInChildren<Collider>())
+            {
+                var surfaceDefProvider = collider.GetComponent<SurfaceDefProvider>();
+                if (surfaceDefProvider != null) continue;
+                surfaceDefProvider = collider.gameObject.AddComponent<SurfaceDefProvider>();
+                surfaceDefProvider.surfaceDef = sdMetal;
+            }
+
             SkillsmasContent.Resources.projectilePrefabs.Add(crateProjectilePrefab);
 
             On.RoR2.GlobalEventManager.OnHitAll += GlobalEventManager_OnHitAll;
