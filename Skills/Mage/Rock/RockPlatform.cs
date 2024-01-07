@@ -64,7 +64,7 @@ namespace Skillsmas.Skills.Mage.Rock
             {
                 "KEYWORD_SKILLSMAS_CRYSTALLIZE"
             };
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Brimstone.png");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/TectonicShift.png");
             skillDef.activationStateMachineName = "Body";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(RockPlatformLeap));
             skillDef.interruptPriority = EntityStates.InterruptPriority.PrioritySkill;

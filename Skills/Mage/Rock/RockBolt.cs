@@ -52,7 +52,7 @@ namespace Skillsmas.Skills.Mage.Rock
             {
                 "KEYWORD_SKILLSMAS_CRYSTALLIZE"
             };
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/CryoBolt.png");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/GeodeBolt.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireRockBolt));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;
