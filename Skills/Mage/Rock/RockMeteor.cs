@@ -195,7 +195,7 @@ namespace Skillsmas.Skills.Mage.Rock
         {
             public static GameObject muzzleflashEffect;
             public static float baseDuration = 2f;
-            public static float entryDuration = 0.6f;
+            public static float entryDuration = 0.3f;
 
             public float duration;
             public bool playedEntryAnimation = false;
@@ -209,11 +209,6 @@ namespace Skillsmas.Skills.Mage.Rock
 
                 if (characterBody) characterBody.SetAimTimer(duration + 1f);
                 PlayAnimation("Gesture, Additive", "PrepFlamethrower", "Flamethrower.playbackRate", entryDuration);
-
-                EffectManager.SimpleMuzzleFlash(muzzleflashEffect, gameObject, "MuzzleLeft", false);
-                EffectManager.SimpleMuzzleFlash(muzzleflashEffect, gameObject, "MuzzleRight", false);
-
-                Util.PlaySound("Play_grandParent_attack1_throw", gameObject);
 
                 var aimAnimator = GetAimAnimator();
                 if (aimAnimator)
@@ -292,13 +287,26 @@ namespace Skillsmas.Skills.Mage.Rock
 
                 if (age >= entryDuration && !playedEntryAnimation)
                 {
+                    playedEntryAnimation = true;
+
                     PlayAnimation("Gesture, Additive", "Flamethrower", "Flamethrower.playbackRate", duration);
+
+                    EffectManager.SimpleMuzzleFlash(muzzleflashEffect, gameObject, "MuzzleLeft", false);
+                    EffectManager.SimpleMuzzleFlash(muzzleflashEffect, gameObject, "MuzzleRight", false);
+
+                    Util.PlaySound("Play_grandParent_attack1_throw", gameObject);
                 }
 
                 if (isAuthority && age >= duration)
                 {
                     outer.SetNextStateToMain();
                 }
+            }
+
+            public override void Update()
+            {
+                base.Update();
+                characterBody.SetSpreadBloom(Util.Remap(age / duration, 0f, 1f, 0.1f, 0.8f), true);
             }
 
             public override void OnExit()
