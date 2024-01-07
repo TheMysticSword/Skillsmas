@@ -28,6 +28,19 @@ namespace Skillsmas.Skills.Toolbot
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
         );
+        public static ConfigOptions.ConfigurableValue<float> pushPower = ConfigOptions.ConfigurableValue.CreateFloat(
+            SkillsmasPlugin.PluginGUID,
+            SkillsmasPlugin.PluginName,
+            SkillsmasPlugin.config,
+            "MUL-T: Shipping Crate",
+            "Push Power",
+            1f,
+            description: "Crates can be pushed by attacks. Increase or decrease this to adjust how strongly they should be pushed.",
+            min: 0f,
+            max: 5f,
+            useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
+        );
+        public static ConfigOptions.ConfigurableValue<float> lifetime;
 
         public override void OnPluginAwake()
         {
@@ -88,7 +101,16 @@ namespace Skillsmas.Skills.Toolbot
 
             var projectileSimple = crateProjectilePrefab.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 20f;
-            projectileSimple.lifetime = 600f;
+            lifetime = ConfigOptions.ConfigurableValue.CreateFloat(
+                SkillsmasPlugin.PluginGUID,
+                SkillsmasPlugin.PluginName,
+                SkillsmasPlugin.config,
+                "MUL-T: Shipping Crate",
+                "Lifetime",
+                600f,
+                onChanged: (newValue) => projectileSimple.lifetime = newValue,
+                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
+            );
 
             var projectileDamage = crateProjectilePrefab.AddComponent<ProjectileDamage>();
 
@@ -136,7 +158,7 @@ namespace Skillsmas.Skills.Toolbot
                     var crate = entity.GetComponent<SkillsmasCrateController>();
                     if (crate)
                     {
-                        crate.rigidbody.AddForce(damageInfo.force, ForceMode.Impulse);
+                        crate.rigidbody.AddForce(damageInfo.force * pushPower, ForceMode.Impulse);
                     }
                 }
             }
