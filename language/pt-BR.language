@@ -16,22 +16,34 @@
     "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Torne-se <style=cIsHealth>incapaz</style> de correr, pular e atacar por <style=cIsHealth>{Update Duration}</style> segundos, então recupere <style=cIsHealing>{Healing}%</style> de PV e ganhe <style=cIsDamage>+{Attack Speed}%</style> de velocidade de ataque por <style=cIsUtility>{Buff Duration}</style> segundos.",
 
     "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Escudo de Energia",
-    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Ágil</style>. Posicione uma parede que causa <style=cIsDamage>{Damage Per Second}%</style> de dano por segundo e <style=cIsUtility>bloqueia a maioria dos ataques</style>.",
+    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Ágil</style>. Segure para gerar uma parede que causa <style=cIsDamage>{Damage Per Second}%</style> de dano por segundo e <style=cIsUtility>bloqueia a maioria dos ataques</style>.",
 
     "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Raio Frígido",
     "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Dispare um raio de <style=cIsUtility>curto alcance</style> que causa <style=cIsDamage>{Damage}% de dano</style>. Máximo de 4.",
 
+    "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME": "Raio de Geodo",
+    "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizante</style>. Dispare um raio que causa <style=cIsDamage>{Damage}% de dani</style>. Máximo de 4.",
+
     "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Nanofoguete Intenso",
     "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Incendiário</style>. Carregue um nanofoguete <style=cIsDamage>superveloz</style> que causa <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de dano.",
+
+    "MAGE_SKILLSMAS_SECONDARY_ROCK_NAME": "Nanorocha Moldada",
+    "MAGE_SKILLSMAS_SECONDARY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizante</style>. Carregue uma nanorocha <style=cIsDamage>rolante</style> que causa <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de dano.",
 
     "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Cortina de Enxofre",
     "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Incendiário</style>. Crie uma tela que causa <style=cIsDamage>{Damage Per Second}% de dano por segundo</style> e <style=cIsDamage>incendeia</style> projéteis aliados.",
 
     "MAGE_SKILLSMAS_UTILITY_LIGHTNING_NAME": "Relâmpago",
-    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Atordoante</style>. Crie um pilar que periodicamente causa dano aos inimigos próximos por <style=cIsDamage>{Damage}% de dano</style>.",
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Atordoante</style>. Crie um pilar que periodicamente causa <style=cIsDamage>{Damage}% de dano</style> aos inimigos próximos.",
+
+    "MAGE_SKILLSMAS_UTILITY_ROCK_NAME": "Deslocamento Tectônico",
+    "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizante</style>. Crie uma plataforma abaixo de você que causa <style=cIsDamage>{Damage}% de dano</style> aos inimigos no momento em que é criada.",
 
     "MAGE_SKILLSMAS_SPECIAL_ICE_NAME": "Geada Instantânea",
-    "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Crie uma explosão gélida ao seu redor causando <style=cIsDamage>{Damage}%</style> de dano e ganhando <style=cIsHealing>{Barrier}% de barreira temporária</style> por alvo congelado.",
+    "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Congelante</style>. Crie uma explosão gélida ao seu redor, causando <style=cIsDamage>{Damage}%</style> de dano e ganhando <style=cIsHealing>{Barrier}% de barreira temporária</style> por alvo congelado.",
+
+    "MAGE_SKILLSMAS_SPECIAL_ROCK_NAME": "Bólide Supersônico",
+    "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizante</style>. Lança um meteoro que causa <style=cIsDamage>{Damage}%</style> de dano e petrifica inimigos por <style=cIsUtility>{Petrification Duration} s</style>.",
 
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
     "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Realize uma investida para frente, causando <style=cIsDamage>{Damage}%</style> de dano ao inimigo, executando-o com <style=cIsDamage>{Execute Threshold}%</style> de PV ou abaixo e regenerando <style=cIsHealing>{Healing}%</style> de sua saúde máxima ao abater.",
@@ -52,6 +64,8 @@
     "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Dá a um aliado <style=cIsUtility>Microrrobôs Defensivos</style> por <style=cIsUtility>{Duration}</style> segundos.",
 
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Farol de Suprimento Reutilizável",
-    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Peça um <style=cIsUtility>permanent</style> Farol de Suprimento. <style=cIsUtility>Alterna</style> entre os dois faróis escolhidos."
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Peça um Farol de Suprimento <style=cIsUtility>permanente</style>. <style=cIsUtility>Alterna</style> entre os dois faróis escolhidos."
+
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Cristalizante</style><style=cSub>Gera cristais ao atingir um inimigo que garantem barreira temporária igual a <style=cIsHealing>{Fractional Barrier}%</style> de sua saúde máxima ao coletá-los.</style>"
   }
 }
