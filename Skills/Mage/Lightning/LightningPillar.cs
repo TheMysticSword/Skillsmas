@@ -11,7 +11,7 @@ using RoR2.Audio;
 using System.Linq;
 using RoR2.Orbs;
 
-namespace Skillsmas.Skills.Mage
+namespace Skillsmas.Skills.Mage.Lightning
 {
     public class LightningPillar : BaseSkill
     {

@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using RoR2.Audio;
 using System.Linq;
 
-namespace Skillsmas.Skills.Mage
+namespace Skillsmas.Skills.Mage.Fire
 {
     public class FireWall : BaseSkill
     {
@@ -143,6 +143,7 @@ namespace Skillsmas.Skills.Mage
 
             public NetworkSoundEventDef lifetimeExpiredSound;
             public float offsetForLifetimeExpiredSound = 2f;
+            public int lifetimeExpiredSoundVolume = 4;
             public bool hasPlayedLifetimeExpiredSound = false;
 
             public List<Transform> sidePillarTransforms = new List<Transform>();
@@ -211,7 +212,7 @@ namespace Skillsmas.Skills.Mage
                         hasPlayedLifetimeExpiredSound = true;
                         if (NetworkServer.active && lifetimeExpiredSound)
                         {
-                            for (var i = 0; i < 4; i++)
+                            for (var i = 0; i < lifetimeExpiredSoundVolume; i++)
                                 PointSoundManager.EmitSoundServer(lifetimeExpiredSound.index, transform.position);
                         }
                     }

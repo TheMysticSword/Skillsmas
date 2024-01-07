@@ -5,7 +5,7 @@ using MysticsRisky2Utils;
 
 namespace Skillsmas.Skills
 {
-    public class BaseSkill : MysticsRisky2Utils.ContentManagement.BaseLoadableAsset
+    public abstract class BaseSkill : MysticsRisky2Utils.ContentManagement.BaseLoadableAsset
     {
         public SkillDef skillDef;
         public SkillFamily.Variant skillFamilyVariant;

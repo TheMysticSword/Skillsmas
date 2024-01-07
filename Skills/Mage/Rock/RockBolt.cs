@@ -8,26 +8,28 @@ using R2API;
 using UnityEngine.Networking;
 using System.Collections.Generic;
 
-namespace Skillsmas.Skills.Mage
+namespace Skillsmas.Skills.Mage.Rock
 {
-    public class CryoBolt : BaseSkill
+    public class RockBolt : BaseSkill
     {
         public static ConfigOptions.ConfigurableValue<float> damage = ConfigOptions.ConfigurableValue.CreateFloat(
             SkillsmasPlugin.PluginGUID,
             SkillsmasPlugin.PluginName,
             SkillsmasPlugin.config,
-            "Artificer: Cryo Bolt",
+            "Artificer: Geode Bolt",
             "Damage",
             280f,
             stringsToAffect: new List<string>
             {
-                "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION"
+                "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION"
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
         );
         public static ConfigOptions.ConfigurableValue<float> procCoefficient;
         public static ConfigOptions.ConfigurableValue<float> radius;
         public static ConfigOptions.ConfigurableValue<float> lifetime;
+
+        public static GameObject impactEffectPrefab;
 
         public override System.Type GetSkillDefType()
         {
@@ -37,25 +39,25 @@ namespace Skillsmas.Skills.Mage
         public override void OnPluginAwake()
         {
             base.OnPluginAwake();
-            FireIceBolt.projectilePrefabStatic = Utils.CreateBlankPrefab("Skillsmas_CryoBolt", true);
-            FireIceBolt.projectilePrefabStatic.GetComponent<NetworkIdentity>().localPlayerAuthority = true;
+            FireRockBolt.projectilePrefabStatic = Utils.CreateBlankPrefab("Skillsmas_RockBolt", true);
+            FireRockBolt.projectilePrefabStatic.GetComponent<NetworkIdentity>().localPlayerAuthority = true;
         }
 
         public override void OnLoad()
         {
-            skillDef.skillName = "Skillsmas_CryoBolt";
-            skillDef.skillNameToken = "MAGE_SKILLSMAS_PRIMARY_ICE_NAME";
-            skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION";
+            skillDef.skillName = "Skillsmas_RockBolt";
+            skillDef.skillNameToken = "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME";
+            skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION";
             skillDef.keywordTokens = new[]
             {
-                "KEYWORD_FREEZING"
+                "KEYWORD_SKILLSMAS_CRYSTALLIZE"
             };
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/CryoBolt.png");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/GeodeBolt.png");
             skillDef.activationStateMachineName = "Weapon";
-            skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireIceBolt));
+            skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FireRockBolt));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;
             SetUpValuesAndOptions(
-                "Artificer: Cryo Bolt",
+                "Artificer: Geode Bolt",
                 baseRechargeInterval: 1.3f,
                 baseMaxStock: 4,
                 rechargeStock: 1,
@@ -79,36 +81,51 @@ namespace Skillsmas.Skills.Mage
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyPrimaryFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
 
-            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FireIceBolt));
+            SkillsmasContent.Resources.entityStateTypes.Add(typeof(FireRockBolt));
 
-            var ghost = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/CryoBolt/CryoBoltGhost.prefab");
+            impactEffectPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Rock/RockBolt/RockBoltImpactEffect.prefab");
+            impactEffectPrefab.AddComponent<DestroyOnTimer>().duration = 5f;
+            var shakeEmitter = impactEffectPrefab.AddComponent<ShakeEmitter>();
+            shakeEmitter.wave = new Wave
+            {
+                amplitude = 0.2f,
+                frequency = 8f
+            };
+            shakeEmitter.amplitudeTimeDecay = true;
+            shakeEmitter.radius = 40f;
+            shakeEmitter.duration = 0.2f;
+            shakeEmitter.shakeOnStart = true;
+            var effectComponent = impactEffectPrefab.AddComponent<EffectComponent>();
+            effectComponent.soundName = "Play_commando_M1";
+            var vfxAttributes = impactEffectPrefab.AddComponent<VFXAttributes>();
+            vfxAttributes.vfxIntensity = VFXAttributes.VFXIntensity.Medium;
+            vfxAttributes.vfxPriority = VFXAttributes.VFXPriority.Medium;
+            SkillsmasContent.Resources.effectPrefabs.Add(impactEffectPrefab);
+
+            var ghost = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Rock/RockBolt/RockBoltGhost.prefab");
             ghost.AddComponent<ProjectileGhostController>();
-            var objectScaleCurve = ghost.transform.Find("Crystal").gameObject.AddComponent<ObjectScaleCurve>();
-            objectScaleCurve.overallCurve = ghost.transform.Find("SnowParticles").GetComponent<ParticleSystem>().inheritVelocity.curve.curve;
-            objectScaleCurve.useOverallCurveOnly = true;
-            ghost.AddComponent<DetachParticleOnDestroyAndEndEmission>().particleSystem = ghost.transform.Find("SnowParticles").GetComponent<ParticleSystem>();
-
-            Utils.CopyChildren(SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/CryoBolt/CryoBoltProjectile.prefab"), FireIceBolt.projectilePrefabStatic);
-            var projectileController = FireIceBolt.projectilePrefabStatic.AddComponent<ProjectileController>();
+            
+            Utils.CopyChildren(SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Rock/RockBolt/RockBoltProjectile.prefab"), FireRockBolt.projectilePrefabStatic);
+            var projectileController = FireRockBolt.projectilePrefabStatic.AddComponent<ProjectileController>();
             projectileController.allowPrediction = true;
             projectileController.ghostPrefab = ghost;
             procCoefficient = ConfigOptions.ConfigurableValue.CreateFloat(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
-                "Artificer: Cryo Bolt",
+                "Artificer: Geode Bolt",
                 "Proc Coefficient",
                 1f,
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => projectileController.procCoefficient = newValue
             );
-            FireIceBolt.projectilePrefabStatic.AddComponent<ProjectileNetworkTransform>();
-            var projectileSimple = FireIceBolt.projectilePrefabStatic.AddComponent<ProjectileSimple>();
+            FireRockBolt.projectilePrefabStatic.AddComponent<ProjectileNetworkTransform>();
+            var projectileSimple = FireRockBolt.projectilePrefabStatic.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 80f;
-            var projectileDamage = FireIceBolt.projectilePrefabStatic.AddComponent<ProjectileDamage>();
-            projectileDamage.damageType = DamageType.Freeze2s;
-            var projectileImpactExplosion = FireIceBolt.projectilePrefabStatic.AddComponent<ProjectileImpactExplosion>();
-            projectileImpactExplosion.impactEffect = Addressables.LoadAssetAsync<GameObject>("RoR2/Junk/Mage/FrozenImpactEffect.prefab").WaitForCompletion();
+            projectileSimple.lifetime = 2f;
+            var projectileDamage = FireRockBolt.projectilePrefabStatic.AddComponent<ProjectileDamage>();
+            var projectileImpactExplosion = FireRockBolt.projectilePrefabStatic.AddComponent<ProjectileImpactExplosion>();
+            projectileImpactExplosion.impactEffect = impactEffectPrefab;
             projectileImpactExplosion.destroyOnEnemy = true;
             projectileImpactExplosion.destroyOnWorld = true;
             projectileImpactExplosion.lifetime = 99f;
@@ -117,7 +134,7 @@ namespace Skillsmas.Skills.Mage
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
-                "Artificer: Cryo Bolt",
+                "Artificer: Geode Bolt",
                 "Radius",
                 2.5f,
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
@@ -125,31 +142,21 @@ namespace Skillsmas.Skills.Mage
             );
             projectileImpactExplosion.blastDamageCoefficient = 1f;
             projectileImpactExplosion.blastProcCoefficient = 1f;
-            var proximityDetonator = FireIceBolt.projectilePrefabStatic.transform.Find("ProximityDetonator").gameObject.AddComponent<SkillsmasProjectileProximityDetonator>();
-            proximityDetonator.myTeamFilter = FireIceBolt.projectilePrefabStatic.GetComponent<TeamFilter>();
+            var proximityDetonator = FireRockBolt.projectilePrefabStatic.transform.Find("ProximityDetonator").gameObject.AddComponent<SkillsmasProjectileProximityDetonator>();
+            proximityDetonator.myTeamFilter = FireRockBolt.projectilePrefabStatic.GetComponent<TeamFilter>();
             proximityDetonator.projectileExplosion = projectileImpactExplosion;
-
-            lifetime = ConfigOptions.ConfigurableValue.CreateFloat(
-                SkillsmasPlugin.PluginGUID,
-                SkillsmasPlugin.PluginName,
-                SkillsmasPlugin.config,
-                "Artificer: Cryo Bolt",
-                "Lifetime",
-                0.2f,
-                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
-                onChanged: (newValue) =>
-                {
-                    objectScaleCurve.timeMax = newValue;
-                    projectileSimple.lifetime = newValue;
-                }
-            );
             
-            SkillsmasContent.Resources.projectilePrefabs.Add(FireIceBolt.projectilePrefabStatic);
+            SkillsmasContent.Resources.projectilePrefabs.Add(FireRockBolt.projectilePrefabStatic);
 
-            FireIceBolt.muzzleflashEffectPrefabStatic = Addressables.LoadAssetAsync<GameObject>("RoR2/Junk/Mage/MuzzleflashMageIce.prefab").WaitForCompletion();
+            FireRockBolt.muzzleflashEffectPrefabStatic = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Mage/MuzzleflashMageFire.prefab").WaitForCompletion();
         }
 
-        public class FireIceBolt : EntityStates.Mage.Weapon.FireFireBolt
+        public override void AfterContentPackLoaded()
+        {
+            FireRockBolt.projectilePrefabStatic.AddComponent<DamageAPI.ModdedDamageTypeHolderComponent>().Add(DamageTypes.Crystallize.crystallizeDamageType);
+        }
+
+        public class FireRockBolt : EntityStates.Mage.Weapon.FireFireBolt
         {
             public static GameObject projectilePrefabStatic;
             public static GameObject muzzleflashEffectPrefabStatic;
@@ -159,10 +166,10 @@ namespace Skillsmas.Skills.Mage
                 projectilePrefab = projectilePrefabStatic;
                 muzzleflashEffectPrefab = muzzleflashEffectPrefabStatic;
                 damageCoefficient = damage / 100f;
-                force = 0f;
+                force = 300f;
                 baseDuration = 0.25f;
-                attackSoundString = "Play_mage_shift_wall_build";
-                attackSoundPitch = 1.3f;
+                attackSoundString = "Play_golem_impact";
+                attackSoundPitch = 0.87f;
                 base.OnEnter();
             }
         }

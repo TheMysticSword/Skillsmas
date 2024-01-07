@@ -8,7 +8,7 @@ using R2API;
 using UnityEngine.Networking;
 using System.Collections.Generic;
 
-namespace Skillsmas.Skills.Mage
+namespace Skillsmas.Skills.Mage.Fire
 {
     public class FlameBomb : BaseSkill
     {
