@@ -71,7 +71,7 @@ namespace Skillsmas.DamageTypes
 				SkillsmasPlugin.config,
 				"Keyword: Crystallize",
 				"Fractional Barrier",
-				3f,
+				5f,
 				stringsToAffect: new List<string>
 				{
 					"KEYWORD_SKILLSMAS_CRYSTALLIZE"

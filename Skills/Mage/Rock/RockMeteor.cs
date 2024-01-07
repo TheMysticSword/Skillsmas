@@ -36,7 +36,7 @@ namespace Skillsmas.Skills.Mage.Rock
             SkillsmasPlugin.config,
             "Artificer: Superbolide",
             "Petrification Duration",
-            2f,
+            4f,
             stringsToAffect: new List<string>
             {
                 "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION"
