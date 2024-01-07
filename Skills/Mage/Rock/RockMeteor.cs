@@ -148,14 +148,14 @@ namespace Skillsmas.Skills.Mage.Rock
             projectileImpactExplosion.destroyOnWorld = false;
             projectileImpactExplosion.lifetime = 2f;
             objectTransformCurve.timeMax = projectileImpactExplosion.lifetime;
-            projectileImpactExplosion.falloffModel = BlastAttack.FalloffModel.SweetSpot;
+            projectileImpactExplosion.falloffModel = BlastAttack.FalloffModel.None;
             radius = ConfigOptions.ConfigurableValue.CreateFloat(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
                 "Artificer: Superbolide",
                 "Radius",
-                40f,
+                22f,
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => projectileImpactExplosion.blastRadius = newValue
             );
