@@ -102,7 +102,7 @@ namespace Skillsmas.Skills.Engi
             shieldPrefab.AddComponent<TeamFilter>();
             shieldPrefab.AddComponent<SkillsmasEnergyShieldAttachment>();
 
-            shieldPrefab.AddComponent<LoopSoundPlayer>().loopDef = Addressables.LoadAssetAsync<RoR2.Audio.LoopSoundDef>("RoR2/Base/ElementalRings/lsdFireTornado.asset").WaitForCompletion();
+            shieldPrefab.AddComponent<LoopSoundPlayer>().loopDef = Addressables.LoadAssetAsync<RoR2.Audio.LoopSoundDef>("RoR2/Base/ArtifactShell/lsdArtifactShellSolarFlareFlight.asset").WaitForCompletion();
 
             ChannelEnergyShield.endEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Engi/BubbleShieldEndEffect.prefab").WaitForCompletion();
         }
