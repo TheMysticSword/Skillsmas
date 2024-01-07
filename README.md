@@ -18,7 +18,7 @@ This mod adds 22 new skills.
 | Artificer | Utility | Thunderbolt | **Stunning.** Create a pillar that periodically hurts nearby enemies for **100% damage**. | 12s |
 | Artificer | Utility | Tectonic Shift | **Crystallize.** Create a platform below yourself that hurts enemies for **1200% damage** at the moment of creation. | 12s |
 | Artificer | Special | Flash Frost | **Freezing.** Create a cold blast around yourself for **800%** damage and gain **12% temporary barrier** per frozen character. | 8s |
-| Artificer | Special | Superbolide | **Crystallize.** Drop a meteor that deals **2000%** damage and petrifies enemies for **2s**. | 12s |
+| Artificer | Special | Superbolide | **Crystallize.** Drop a meteor that deals **2000%** damage and petrifies enemies for **4s**. | 12s |
 | Loader | Secondary | Zip Fist | Fire your gauntlet forward, **quickly pulling** you to the target after immediately retracting the gauntlet. | 5s |
 | Loader | Special | Reinforce | **Stop** barrier decay and increase attack speed by **40%** for **7** seconds. | 20s |
 | Acrid | Utility | Autonomous Organism | **Poisonous.** Create a slowly-moving bubble that deals **200%** damage per second to nearby enemies. | 15s |
