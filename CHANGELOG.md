@@ -6,6 +6,7 @@
 	* Superbolide
 * Added 1 new keyword:
 	* Crystallize
+* Added Brazilian Portuguese translation by Kauzok
 ## 1.0.1
 * Engineer's Energy Shield now scales with attack speed
 * Acrid's Autonomous Organism DPS increased from 100% to 200%

@@ -33,3 +33,5 @@ This mod adds 22 new skills.
 ## Credits
 TheMysticSword - Coding  
 xeyfurr, Thingw - Icons
+### Translations
+Brazilian Portuguese - Kauzok
