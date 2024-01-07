@@ -48,7 +48,6 @@ namespace Skillsmas.Skills.Toolbot
             crateProjectilePrefab = Utils.CreateBlankPrefab("Skillsmas_CrateProjectile", true);
             crateProjectilePrefab.GetComponent<NetworkIdentity>().localPlayerAuthority = true;
             crateProjectilePrefab.AddComponent<NetworkTransform>();
-            crateProjectilePrefab.layer = LayerIndex.world.intVal;
         }
 
         public override void OnLoad()
@@ -96,7 +95,8 @@ namespace Skillsmas.Skills.Toolbot
             var projectileController = crateProjectilePrefab.AddComponent<ProjectileController>();
             projectileController.ghostPrefab = crateGhostPrefab;
             projectileController.allowPrediction = true;
-            crateProjectilePrefab.AddComponent<ProjectileNetworkTransform>();
+            var projectileNetworkTransform = crateProjectilePrefab.AddComponent<ProjectileNetworkTransform>();
+            projectileNetworkTransform.allowClientsideCollision = true;
             crateProjectilePrefab.AddComponent<TeamFilter>();
 
             var projectileSimple = crateProjectilePrefab.AddComponent<ProjectileSimple>();
