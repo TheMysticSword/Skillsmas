@@ -28,7 +28,7 @@ This mod adds 22 new skills.
   
 | Keyword | Description |
 | - | - |
-| Crystallize | Create crystals on hit that grant temporary barrier equal to **3%** of maximum health on pickup. |
+| Crystallize | Create crystals on hit that grant temporary barrier equal to **5%** of maximum health on pickup. |
   
 ## Credits
 TheMysticSword - Coding  
