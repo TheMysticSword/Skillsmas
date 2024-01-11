@@ -80,7 +80,7 @@ namespace Skillsmas.Skills.Mage.Rock
                 cancelSprintingOnActivation: true,
                 forceSprintDuringState: false,
                 canceledFromSprinting: false,
-                isCombatSkill: false,
+                isCombatSkill: true,
                 mustKeyPress: true
             );
             skillDef.resetCooldownTimerOnUse = false;

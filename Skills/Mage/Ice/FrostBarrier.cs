@@ -98,7 +98,7 @@ namespace Skillsmas.Skills.Mage.Ice
                 cancelSprintingOnActivation: true,
                 forceSprintDuringState: false,
                 canceledFromSprinting: false,
-                isCombatSkill: false,
+                isCombatSkill: true,
                 mustKeyPress: true
             );
             skillDef.resetCooldownTimerOnUse = false;
