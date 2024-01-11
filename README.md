@@ -41,4 +41,5 @@ This mod adds 26 new skills.
 TheMysticSword - Coding, Placeholder Icons  
 xeyfurr, Thingw - Icons
 ### Translations
-Brazilian Portuguese - Kauzok
+Brazilian Portuguese - Kauzok  
+Simplified Chinese - Meteorite1014

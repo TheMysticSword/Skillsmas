@@ -16,6 +16,8 @@
 	* Cooldown now starts after the skill ends
 	* Now counts as a combat skill
 * Added more placeholder skill icons
+* Added Simplified Chinese translation by Meteorite1014
+* Updated Brazilian Portuguese translation
 ## 1.1.1
 * MUL-T: Shipping Crate:
 	* The collider is now disabled for the first 0.1 seconds, which should slightly help with the issue of colliding with the crate at the moment of throwing
