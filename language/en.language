@@ -24,17 +24,26 @@
     "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME": "Geode Bolt",
     "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Crystallize</style>. Fire a bolt for <style=cIsDamage>{Damage}% damage</style>. Hold up to 4.",
 
+    "MAGE_SKILLSMAS_PRIMARY_WATER_NAME": "Water Bolt",
+    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Fire a bolt for <style=cIsDamage>{Damage}% damage</style>. Hold up to 4.",
+
     "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Lit Nano-Rocket",
     "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Charge up a <style=cIsDamage>superfast</style> nano-rocket that deals <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage.",
 
     "MAGE_SKILLSMAS_SECONDARY_ROCK_NAME": "Moulded Nano-Boulder",
     "MAGE_SKILLSMAS_SECONDARY_ROCK_DESCRIPTION": "<style=cIsDamage>Crystallize</style>. Charge up a <style=cIsDamage>rolling</style> nano-boulder that deals <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage.",
 
+    "MAGE_SKILLSMAS_SECONDARY_WATER_NAME": "Concentrated Nano-Stream",
+    "MAGE_SKILLSMAS_SECONDARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Charge up a <style=cIsDamage>continuous</style> nano-stream that deals <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage.",
+
     "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Brimstone",
     "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Create a screen that hurts enemies for <style=cIsDamage>{Damage Per Second}% damage per second</style> and <style=cIsDamage>ignites</style> ally projectiles.",
 
     "MAGE_SKILLSMAS_UTILITY_LIGHTNING_NAME": "Thunderbolt",
     "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Create a pillar that periodically hurts nearby enemies for <style=cIsDamage>{Damage}% damage</style>.",
+
+    "MAGE_SKILLSMAS_UTILITY_WATER_NAME": "Cumulonimbus",
+    "MAGE_SKILLSMAS_UTILITY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Create a rain cloud that hurts enemies for <style=cIsDamage>{Damage Per Second}% damage per second</style>.",
 
     "MAGE_SKILLSMAS_UTILITY_ROCK_NAME": "Tectonic Shift",
     "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION": "<style=cIsDamage>Crystallize</style>. Create a platform below yourself that hurts enemies for <style=cIsDamage>{Damage}% damage</style> at the moment of creation.",
@@ -44,6 +53,9 @@
 
     "MAGE_SKILLSMAS_SPECIAL_ROCK_NAME": "Superbolide",
     "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION": "<style=cIsDamage>Crystallize</style>. Drop a meteor that deals <style=cIsDamage>{Damage}%</style> damage and petrifies enemies for <style=cIsUtility>{Petrification Duration}s</style>.",
+
+    "MAGE_SKILLSMAS_SPECIAL_WATER_NAME": "Crashing Wave",
+    "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Surf forward, dealing damage equal to <style=cIsDamage>{Damage Scaling}%</style> of your maximum health on impact.",
 
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
     "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Dash forward to deal <style=cIsDamage>{Damage}%</style> damage to an enemy, executing at <style=cIsDamage>{Execute Threshold}%</style> HP and lower and regenerating <style=cIsHealing>{Healing}%</style> of your maximum health on kill.",

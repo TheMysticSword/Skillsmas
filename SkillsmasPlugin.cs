@@ -228,10 +228,10 @@ namespace Skillsmas
 
             var actions = new System.Action[]
             {
-                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyPrimaryFamily.asset").WaitForCompletion(), "FireFirebolt", "FireLightningBolt", "Skillsmas_CryoBolt", "Skillsmas_RockBolt"),
-                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySecondaryFamily.asset").WaitForCompletion(), "Skillsmas_FlameBomb", "NovaBomb", "IceBomb", "Skillsmas_RockBomb"),
-                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyUtilityFamily.asset").WaitForCompletion(), "Skillsmas_FireWall", "Skillsmas_LightningPillar", "Wall", "Skillsmas_RockPlatform"),
-                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySpecialFamily.asset").WaitForCompletion(), "Flamethrower", "FlyUp", "Skillsmas_FrostBarrier", "Skillsmas_RockMeteor")
+                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyPrimaryFamily.asset").WaitForCompletion(), "FireFirebolt", "FireLightningBolt", "Skillsmas_CryoBolt", "Skillsmas_RockBolt", "Skillsmas_WaterBolt"),
+                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySecondaryFamily.asset").WaitForCompletion(), "Skillsmas_FlameBomb", "NovaBomb", "IceBomb", "Skillsmas_RockBomb", "Skillsmas_WaterBomb"),
+                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodyUtilityFamily.asset").WaitForCompletion(), "Skillsmas_FireWall", "Skillsmas_LightningPillar", "Wall", "Skillsmas_RockPlatform", "Skillsmas_WaterCloud"),
+                () => OrderCharacterSkills(Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySpecialFamily.asset").WaitForCompletion(), "Flamethrower", "FlyUp", "Skillsmas_FrostBarrier", "Skillsmas_RockMeteor", "Skillsmas_WaterWave")
             };
             int num;
             for (var i = 0; i < actions.Length; i = num)
