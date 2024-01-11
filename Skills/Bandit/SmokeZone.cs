@@ -23,7 +23,7 @@ namespace Skillsmas.Skills.Bandit
             skillDef.skillName = "Skillsmas_SmokeZone";
             skillDef.skillNameToken = "BANDIT2_SKILLSMAS_SMOKEZONE_NAME";
             skillDef.skillDescriptionToken = "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION";
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Base/Common/texBuffCloakIcon.tif").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/SmokeMachine.png");
             skillDef.activationStateMachineName = "Stealth";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(ThrowSmokeDevice));
             skillDef.interruptPriority = EntityStates.InterruptPriority.PrioritySkill;

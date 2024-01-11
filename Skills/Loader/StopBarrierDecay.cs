@@ -44,7 +44,7 @@ namespace Skillsmas.Skills.Loader
             skillDef.skillName = "Skillsmas_StopBarrierDecay";
             skillDef.skillNameToken = "LOADER_SKILLSMAS_STOPBARRIERDECAY_NAME";
             skillDef.skillDescriptionToken = "LOADER_SKILLSMAS_STOPBARRIERDECAY_DESCRIPTION";
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Base/Common/texBuffGenericShield.tif").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Reinforce.png");
             skillDef.activationStateMachineName = "Pylon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(StopBarrierDecayState));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;

@@ -79,7 +79,7 @@ namespace Skillsmas.Skills.Toolbot
             skillDef.skillName = "Skillsmas_RobotUpdate";
             skillDef.skillNameToken = "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME";
             skillDef.skillDescriptionToken = "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION";
-            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/Skills/MUL-T/RobotUpdate/texRobotUpdateBuff.png");
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/UpdateMode.png");
             skillDef.activationStateMachineName = "Body";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(ToolbotUpdating));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;

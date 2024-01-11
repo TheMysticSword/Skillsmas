@@ -63,7 +63,7 @@ namespace Skillsmas.Skills.Engi
             {
                 "KEYWORD_AGILE"
             };
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Base/RoboBallBoss/texBuffEngiShieldIcon.tif").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/EnergyShield.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(ChannelEnergyShield));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Any;
