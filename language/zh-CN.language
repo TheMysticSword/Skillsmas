@@ -1,5 +1,5 @@
 {
-  "strings": {
+  "zh-CN": {
     "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "发烟器",
     "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "创造一个持续存在的烟雾区域，使位于其范围内的友方<style=cIsUtility>隐身</style>。",
 
