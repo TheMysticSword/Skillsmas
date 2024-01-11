@@ -63,7 +63,7 @@ namespace Skillsmas.Skills.Croco
             skillDef.skillName = "Skillsmas_PoisonExtension";
             skillDef.skillNameToken = "CROCO_SKILLSMAS_POISONEXTENSION_NAME";
             skillDef.skillDescriptionToken = "CROCO_SKILLSMAS_POISONEXTENSION_DESCRIPTION";
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Base/ElitePoison/texBuffAffixPoisonIcon.tif").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Neutropenia.png");
             skillDef.activationStateMachineName = "Mouth";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(FirePoisonExtensionProjectile));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;

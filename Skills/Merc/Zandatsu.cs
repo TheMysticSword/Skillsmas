@@ -75,7 +75,7 @@ namespace Skillsmas.Skills.Merc
             skillDef.skillName = "Skillsmas_Zandatsu";
             skillDef.skillNameToken = "MERC_SKILLSMAS_ZANDATSU_NAME";
             skillDef.skillDescriptionToken = "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION";
-            skillDef.icon = Addressables.LoadAssetAsync<Sprite>("RoR2/Base/AttackSpeedOnCrit/texBuffAttackSpeedOnCritIcon.tif").WaitForCompletion();
+            skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Zandatsu.png");
             skillDef.activationStateMachineName = "Body";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(ZandatsuDash));
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;
