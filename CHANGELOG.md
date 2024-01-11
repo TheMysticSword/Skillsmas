@@ -1,3 +1,17 @@
+## 1.2.0
+* Added 4 new Artificer skills:
+	* Water Bolt
+	* Concentrated Nano-Stream
+	* Cumulonimbus
+	* Crashing Wave
+* Added 1 new keyword:
+	* Revitalizing
+* Artificer: Frost Barrier:
+	* Now counts as a combat skill
+* Artificer: Superbolide:
+	* Cooldown: ~~12s~~ ⇒ 8s
+	* Cooldown now starts after the skill ends
+	* Now counts as a combat skill
 ## 1.1.1
 * MUL-T: Shipping Crate:
 	* The collider is now disabled for the first 0.1 seconds, which should slightly help with the issue of colliding with the crate at the moment of throwing
