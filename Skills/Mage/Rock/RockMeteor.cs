@@ -86,7 +86,7 @@ namespace Skillsmas.Skills.Mage.Rock
             skillDef.resetCooldownTimerOnUse = false;
             skillDef.fullRestockOnAssign = true;
             skillDef.dontAllowPastMaxStocks = false;
-            skillDef.beginSkillCooldownOnSkillEnd = false;
+            skillDef.beginSkillCooldownOnSkillEnd = true;
 
             var skillFamily = Addressables.LoadAssetAsync<SkillFamily>("RoR2/Base/Mage/MageBodySpecialFamily.asset").WaitForCompletion();
             HG.ArrayUtils.ArrayAppend(ref skillFamily.variants, in skillFamilyVariant);
