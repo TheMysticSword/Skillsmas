@@ -21,14 +21,20 @@
     "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Крио-выстрел",
     "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Заморозка</style>. Выстрел снарядом <style=cIsUtility>для ближней дистанции</style>, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
 
-    "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME": "Жеодовой выстрел",
+    "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME": "Жеодовый выстрел",
     "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Кристаллизация</style>. Выстрел снарядом, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
+
+    "MAGE_SKILLSMAS_PRIMARY_WATER_NAME": "Водяной выстрел",
+    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Выстрел снарядом, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
 
     "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Подожжённая наноракета",
     "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Поджог</style>. Бросок <style=cIsDamage>сверхбыстрой</style> наноракеты, которая наносит <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона.",
 
     "MAGE_SKILLSMAS_SECONDARY_ROCK_NAME": "Формованный нановалун",
     "MAGE_SKILLSMAS_SECONDARY_ROCK_DESCRIPTION": "<style=cIsDamage>Кристаллизация</style>. Бросок <style=cIsDamage>катящимся</style> нановалуном, который наносит <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона.",
+
+    "MAGE_SKILLSMAS_SECONDARY_WATER_NAME": "Сконцентрированный нанопоток",
+    "MAGE_SKILLSMAS_SECONDARY_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Выстрел <style=cIsDamage>продолжительным</style> нанопотоком, который наносит <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона.",
 
     "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Самородная сера",
     "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Поджог</style>. Создаёт экран, наносящий врагам <style=cIsDamage>{Damage Per Second}% урона в секунду</style> и <style=cIsDamage>поджигающий</style> снаряды союзников.",
@@ -39,11 +45,17 @@
     "MAGE_SKILLSMAS_UTILITY_ROCK_NAME": "Тектонический сдвиг",
     "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION": "<style=cIsDamage>Кристаллизация</style>. Создаёт платформу под вами, наносящую врагам <style=cIsDamage>{Damage}% урона</style> в момент создания.",
 
+    "MAGE_SKILLSMAS_UTILITY_WATER_NAME": "Кучево-дождевое облако",
+    "MAGE_SKILLSMAS_UTILITY_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Создаёт дождевое облако, наносящее врагам <style=cIsDamage>{Damage Per Second}% урона в секунду</style>.",
+
     "MAGE_SKILLSMAS_SPECIAL_ICE_NAME": "Вспышка мороза",
     "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Заморозка.</style> Создаёт холодный взрыв вокруг вас на <style=cIsDamage>{Damage}%</style> урона и даёт <style=cIsHealing>{Barrier}% временного барьера</style> за каждого замороженного персонажа.",
 
     "MAGE_SKILLSMAS_SPECIAL_ROCK_NAME": "Суперболид",
     "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION": "<style=cIsDamage>Кристаллизация</style>. Сбрасывает метеорит, наносящий <style=cIsDamage>{Damage}%</style> урона и превращающий врагов в камень на <style=cIsUtility>{Petrification Duration} сек.</style>",
+
+    "MAGE_SKILLSMAS_SPECIAL_WATER_NAME": "Бьющаяся волна",
+    "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Бросает вас вперёд, нанося урон, равный <style=cIsDamage>{Damage Scaling}%</style> от вашего максимального здоровья при столкновении.",
 
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Дзандацу",
     "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Совершает рывок вперёд, чтобы нанести врагу <style=cIsDamage>{Damage}%</style> урона, казня при <style=cIsDamage>{Execute Threshold}%</style> ОЗ и ниже и восстанавливая <style=cIsHealing>{Healing}%</style> от вашего максимального запаса здоровья при убийстве.",
@@ -66,6 +78,7 @@
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Многоразовый маяк снабжения",
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Запрашивает <style=cIsUtility>постоянный</style> маяк снабжения. <style=cIsUtility>Чередуется</style> между вашими двумя выбранными маяками.",
 
-    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Кристаллизация</style><style=cSub>При попадании создаёт кристаллы. При подборе кристаллы дают временный барьер, равный <style=cIsHealing>{Fractional Barrier}%</style> от максимального здоровья.</style>"
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Кристаллизация</style><style=cSub>При попадании создаёт кристаллы. При подборе кристаллы дают временный барьер, равный <style=cIsHealing>{Fractional Barrier}%</style> от максимального здоровья.</style>",
+    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>Оживление</style><style=cSub>Попадания по противникам восстанавливает здоровье всем союзникам, равное <style=cIsHealing>{Flat Healing}</style> ОЗ и дополнительно <style=cIsHealing>{Fractional Healing}%</style> от <style=cIsUtility>вашего</style> максимального здоровья.</style>"
   }
 }
