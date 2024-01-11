@@ -66,6 +66,7 @@
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Reuseable Supply Beacon",
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Request a <style=cIsUtility>permanent</style> Supply Beacon. <style=cIsUtility>Alternates</style> between the two of your chosen beacons.",
 
-    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Crystallize</style><style=cSub>Create crystals on hit that grant temporary barrier equal to <style=cIsHealing>{Fractional Barrier}%</style> of maximum health on pickup.</style>"
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Crystallize</style><style=cSub>Create crystals on hit that grant temporary barrier equal to <style=cIsHealing>{Fractional Barrier}%</style> of maximum health on pickup.</style>",
+    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>Revitalizing</style><style=cSub>Hitting enemies recovers health to all allies equal to <style=cIsHealing>{Flat Healing}</style> HP plus an additional <style=cIsHealing>{Fractional Healing}%</style> of <style=cIsUtility>your</style> maximum health.</style>"
   }
 }
