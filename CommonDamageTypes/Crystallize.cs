@@ -116,7 +116,7 @@ namespace Skillsmas.DamageTypes
 
 		private static void GenericGameEvents_OnHitEnemy(DamageInfo damageInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo attackerInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo victimInfo)
 		{
-			if (damageInfo.HasModdedDamageType(crystallizeDamageType))
+			if (damageInfo.procCoefficient > 0 && damageInfo.HasModdedDamageType(crystallizeDamageType) && attackerInfo.master && Util.CheckRoll(100f * damageInfo.procCoefficient, attackerInfo.master))
 			{
 				var direction = Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.up) * Quaternion.AngleAxis(-70f, Vector3.right) * Vector3.forward;
 				ProjectileManager.instance.FireProjectile(new FireProjectileInfo
