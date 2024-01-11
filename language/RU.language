@@ -57,8 +57,14 @@
     "MAGE_SKILLSMAS_SPECIAL_WATER_NAME": "Бьющаяся волна",
     "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Бросает вас вперёд, нанося урон, равный <style=cIsDamage>{Damage Scaling}%</style> от вашего максимального здоровья при столкновении.",
 
+    "MERC_SKILLSMAS_BLADEROLL_NAME": "Разрывное течение",
+    "MERC_SKILLSMAS_BLADEROLL_DESCRIPTION": "Позволяет катиться вперёд до <style=cIsUtility>{Max Duration}</style> секунд, нанося <style=cIsDamage>{Damage}%</style> урона. Длительность переката влияет на время восстановления.",
+
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Дзандацу",
     "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Совершает рывок вперёд, чтобы нанести врагу <style=cIsDamage>{Damage}%</style> урона, казня при <style=cIsDamage>{Execute Threshold}%</style> ОЗ и ниже и восстанавливая <style=cIsHealing>{Healing}%</style> от вашего максимального запаса здоровья при убийстве.",
+
+    "MERC_SKILLSMAS_XSLASH_NAME": "Пересекающие штормы",
+    "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "Выполняет крупный диагональный рубящий удар, наносящий <style=cIsDamage>{Damage}%</style> урона. Можно иметь при себе до 2 зарядов.",
 
     "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Молниеносный кулак",
     "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Выстрел перчаткой, <style=cIsUtility>быстро притягивающий</style> вас к цели после моментального возврата перчатки.",

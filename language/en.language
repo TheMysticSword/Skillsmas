@@ -57,8 +57,14 @@
     "MAGE_SKILLSMAS_SPECIAL_WATER_NAME": "Crashing Wave",
     "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Surf forward, dealing damage equal to <style=cIsDamage>{Damage Scaling}%</style> of your maximum health on impact.",
 
+    "MERC_SKILLSMAS_BLADEROLL_NAME": "Riptide",
+    "MERC_SKILLSMAS_BLADEROLL_DESCRIPTION": "Roll forward for up to <style=cIsUtility>{Max Duration}</style> seconds, dealing <style=cIsDamage>{Damage}%</style> damage. Rolling duration affects cooldown.",
+
     "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
     "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Dash forward to deal <style=cIsDamage>{Damage}%</style> damage to an enemy, executing at <style=cIsDamage>{Execute Threshold}%</style> HP and lower and regenerating <style=cIsHealing>{Healing}%</style> of your maximum health on kill.",
+
+    "MERC_SKILLSMAS_XSLASH_NAME": "Crossing Storms",
+    "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "Perform a large diagonal slash for <style=cIsDamage>{Damage}%</style> damage. Can hold up to 2.",
 
     "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Zip Fist",
     "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Fire your gauntlet forward, <style=cIsUtility>quickly pulling</style> you to the target after immediately retracting the gauntlet.",

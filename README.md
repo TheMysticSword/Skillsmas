@@ -9,7 +9,9 @@ This mod adds 26 new skills.
 | MUL-T | Secondary | Shipping Crate | Toss a crate for **400%** damage. **Can be pushed around, used as a platform or to block projectiles.** | 6s |
 | MUL-T | Utility | Update Mode | Become **unable** to sprint, jump and attack for **5** seconds, then recover **10%** HP and gain **+50%** attack speed for **10** seconds. | 10s |
 | Engineer | Primary | Energy Shield | **Agile**. Create a wall that deals **400%** damage per second and blocks attacks. | 0s |
+| Mercenary | Secondary | Riptide | Roll forward for up to **7** seconds, dealing **220%** damage. Rolling duration affects cooldown. | 2.5s |
 | Mercenary | Special | Zandatsu | Dash forward to deal **600%** damage to an enemy, executing at **10%** HP and lower and regenerating **30%** of your maximum health on kill. | 6s |
+| Mercenary | Special | Crossing Storms | Perform a large diagonal slash for **1000%** damage. Can hold up to 2. | 6s |
 | Artificer | Primary | Cryo Bolt | **Freezing**. Fire a **short-range** bolt for **280% damage**. Hold up to 4. | 1.3s |
 | Artificer | Primary | Geode Bolt | **Crystallize**. Fire a bolt for **280% damage**. Hold up to 4. | 1.3s |
 | Artificer | Primary | Water Bolt | **Revitalizing**. Fire a bolt for **280% damage**. Hold up to 4. | 1.3s |

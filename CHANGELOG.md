@@ -4,6 +4,9 @@
 	* Concentrated Nano-Stream
 	* Cumulonimbus
 	* Crashing Wave
+* Added 2 new Mercenary skills:
+	* Riptide
+	* Crossing Storms
 * Added 1 new keyword:
 	* Revitalizing
 * Artificer: Frost Barrier:
