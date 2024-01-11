@@ -1,5 +1,5 @@
 # Skillsmas
-This mod adds 22 new skills.  
+This mod adds 26 new skills.  
 
 | Character | Slot | Name | Description | Cooldown |
 | - | - | - | - | - |
@@ -12,13 +12,17 @@ This mod adds 22 new skills.
 | Mercenary | Special | Zandatsu | Dash forward to deal **600%** damage to an enemy, executing at **10%** HP and lower and regenerating **30%** of your maximum health on kill. | 6s |
 | Artificer | Primary | Cryo Bolt | **Freezing.** Fire a **short-range** bolt for **280% damage**. Hold up to 4. | 1.3s |
 | Artificer | Primary | Geode Bolt | **Crystallize.** Fire a bolt for **280% damage**. Hold up to 4. | 1.3s |
+| Artificer | Primary | Water Bolt | **Revitalizing.** Fire a bolt for **280% damage**. Hold up to 4. | 1.3s |
 | Artificer | Secondary | Lit Nano-Rocket | **Ignite.** Charge up a **superfast** nano-rocket that deals **400%-2000%** damage. | 5s |
 | Artificer | Secondary | Moulded Nano-Boulder | **Crystallize.** Charge up a **rolling** nano-boulder that deals **400%-2000%** damage. | 5s |
+| Artificer | Secondary | Concentrated Nano-Stream | **Revitalizing.** Charge up a **continuous** nano-stream that deals **400%-2000%** damage. | 5s |
 | Artificer | Utility | Brimstone | **Ignite.** Create a screen that hurts enemies for **100% damage per second** and **ignites** ally projectiles. | 12s |
 | Artificer | Utility | Thunderbolt | **Stunning.** Create a pillar that periodically hurts nearby enemies for **100% damage**. | 12s |
 | Artificer | Utility | Tectonic Shift | **Crystallize.** Create a platform below yourself that hurts enemies for **1200% damage** at the moment of creation. | 12s |
+| Artificer | Utility | Cumulonimbus | **Revitalizing.** Create a rain cloud that hurts enemies for **100% damage per second**. | 12s |
 | Artificer | Special | Flash Frost | **Freezing.** Create a cold blast around yourself for **800%** damage and gain **12% temporary barrier** per frozen character. | 8s |
-| Artificer | Special | Superbolide | **Crystallize.** Drop a meteor that deals **2000%** damage and petrifies enemies for **4s**. | 12s |
+| Artificer | Special | Superbolide | **Crystallize.** Drop a meteor that deals **2000%** damage and petrifies enemies for **4s**. | 8s |
+| Artificer | Special | Crashing Wave | **Revitalizing.** Surf forward, dealing damage equal to **125%** of your maximum health on landing. | 5s |
 | Loader | Secondary | Zip Fist | Fire your gauntlet forward, **quickly pulling** you to the target after immediately retracting the gauntlet. | 5s |
 | Loader | Special | Reinforce | **Stop** barrier decay and increase attack speed by **40%** for **7** seconds. | 20s |
 | Acrid | Utility | Autonomous Organism | **Poisonous.** Create a slowly-moving bubble that deals **200%** damage per second to nearby enemies. | 15s |
@@ -29,6 +33,7 @@ This mod adds 22 new skills.
 | Keyword | Description |
 | - | - |
 | Crystallize | Create crystals on hit that grant temporary barrier equal to **5%** of maximum health on pickup. |
+| Revitalizing | Hitting enemies recovers health to all allies equal to **1** HP plus an additional **1%** of **your** maximum health. |
   
 ## Credits
 TheMysticSword - Coding  
