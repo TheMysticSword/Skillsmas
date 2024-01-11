@@ -38,7 +38,7 @@ This mod adds 26 new skills.
 | Revitalizing | Hitting enemies recovers health to all allies equal to **1** HP plus an additional **1%** of **your** maximum health. |
   
 ## Credits
-TheMysticSword - Coding  
+TheMysticSword - Coding, Placeholder Icons  
 xeyfurr, Thingw - Icons
 ### Translations
 Brazilian Portuguese - Kauzok
