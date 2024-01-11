@@ -126,7 +126,7 @@ namespace Skillsmas.Skills.Mage.Water
             SurfWave.muzzleflashEffect = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Mage/MuzzleflashMageLightningLargeWithTrail.prefab").WaitForCompletion();
         }
 
-        public class SurfWave : EntityStates.Mage.MageCharacterMain
+        public class SurfWave : EntityStates.GenericCharacterMain
         {
             public static GameObject muzzleflashEffect;
             public static float forwardVelocity = 0f;
