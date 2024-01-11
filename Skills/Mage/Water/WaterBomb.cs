@@ -245,8 +245,8 @@ namespace Skillsmas.Skills.Mage.Water
                 }
                 beamSize = Util.Remap(charge, 0f, 1f, 0.5f, 1f);
                 
-                Util.PlaySound("Play_acrid_shift_land", gameObject);
-                soundLoopPtr = LoopSoundManager.PlaySoundLoopLocal(gameObject, loopSoundDef);
+                Util.PlayAttackSpeedSound("Play_acrid_shift_land", gameObject, attackSpeedStat);
+                soundLoopPtr = LoopSoundManager.PlaySoundLoopLocalRtpc(gameObject, loopSoundDef, "attackSpeed", Util.CalculateAttackSpeedRtpcValue(attackSpeedStat));
                 PlayAnimation("Gesture, Additive", "PrepFlamethrower", "Flamethrower.playbackRate", animationEntryDuration);
                 characterBody.SetAimTimer(duration + 1f);
 
