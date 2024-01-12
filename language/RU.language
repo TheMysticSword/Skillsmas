@@ -1,5 +1,5 @@
 {
-  "strings": {
+  "RU": {
     "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Дым-машина",
     "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Создаёт продолжительную дымовую зону, которая делает союзников внутри зоны <style=cIsUtility>невидимыми</style>.",
 
