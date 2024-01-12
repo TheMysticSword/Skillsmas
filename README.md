@@ -18,9 +18,9 @@ This mod adds 28 new skills.
 | Artificer | Secondary | Lit Nano-Rocket | **Ignite**. Charge up a **superfast** nano-rocket that deals **400%-2000%** damage. | 5s |
 | Artificer | Secondary | Moulded Nano-Boulder | **Crystallize**. Charge up a **rolling** nano-boulder that deals **400%-2000%** damage. | 5s |
 | Artificer | Secondary | Concentrated Nano-Stream | **Revitalizing**. Charge up a **continuous** nano-stream that deals **400%-2000%** damage. | 5s |
-| Artificer | Utility | Brimstone | **Ignite**. Create a screen that hurts enemies for **100% damage per second** and **ignites** ally projectiles. | 12s |
+| Artificer | Utility | Brimstone | **Ignite**. Create a screen that hurts enemies for **150% damage per second** and **ignites** ally projectiles. | 12s |
 | Artificer | Utility | Thunderbolt | **Stunning**. Create a pillar that periodically hurts nearby enemies for **100% damage**. | 12s |
-| Artificer | Utility | Tectonic Shift | **Crystallize**. Create a platform below yourself that hurts enemies for **1200% damage** at the moment of creation. | 12s |
+| Artificer | Utility | Tectonic Shift | **Crystallize**. Create a platform below yourself that hurts enemies for **200% damage** at the moment of creation. | 12s |
 | Artificer | Utility | Cumulonimbus | **Revitalizing**. Create a rain cloud that hurts enemies for **100% damage per second**. | 12s |
 | Artificer | Special | Flash Frost | **Freezing**. Create a cold blast around yourself for **800%** damage and gain **12% temporary barrier** per frozen character. | 8s |
 | Artificer | Special | Superbolide | **Crystallize**. Drop a meteor that deals **2000%** damage and petrifies enemies for **4s**. | 8s |
