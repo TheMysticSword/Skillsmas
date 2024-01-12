@@ -90,17 +90,6 @@ namespace Skillsmas.Skills.Mage.Water
 
             explosionEffectPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Water/WaterWave/WaterWaveExplosion.prefab");
             explosionEffectPrefab.AddComponent<DestroyOnTimer>().duration = 5f;
-            var shakeEmitter = explosionEffectPrefab.AddComponent<ShakeEmitter>();
-            shakeEmitter.wave = new Wave
-            {
-                amplitude = 2f,
-                frequency = 5f
-            };
-            shakeEmitter.scaleShakeRadiusWithLocalScale = true;
-            shakeEmitter.amplitudeTimeDecay = true;
-            shakeEmitter.radius = 3f;
-            shakeEmitter.duration = 0.6f;
-            shakeEmitter.shakeOnStart = true;
             var lightIntensityCurve = explosionEffectPrefab.transform.Find("Point Light").gameObject.AddComponent<LightIntensityCurve>();
             lightIntensityCurve.curve = AnimationCurve.EaseInOut(0f, 1f, 1f, 0f);
             lightIntensityCurve.timeMax = 0.5f;
@@ -111,6 +100,17 @@ namespace Skillsmas.Skills.Mage.Water
             var vfxAttributes = explosionEffectPrefab.AddComponent<VFXAttributes>();
             vfxAttributes.vfxIntensity = VFXAttributes.VFXIntensity.High;
             vfxAttributes.vfxPriority = VFXAttributes.VFXPriority.Always;
+            var shakeEmitter = explosionEffectPrefab.AddComponent<ShakeEmitter>();
+            shakeEmitter.wave = new Wave
+            {
+                amplitude = 2f,
+                frequency = 1f
+            };
+            shakeEmitter.scaleShakeRadiusWithLocalScale = true;
+            shakeEmitter.amplitudeTimeDecay = true;
+            shakeEmitter.radius = 2f;
+            shakeEmitter.duration = 0.6f;
+            shakeEmitter.shakeOnStart = true;
             SkillsmasContent.Resources.effectPrefabs.Add(explosionEffectPrefab);
 
             waveEffectPrefab = SkillsmasPlugin.AssetBundle.LoadAsset<GameObject>("Assets/Mods/Skillsmas/Skills/Artificer/Water/WaterWave/WaterWaveEffect.prefab");
