@@ -1,5 +1,5 @@
 # Skillsmas
-This mod adds 26 new skills.  
+This mod adds 28 new skills.  
 
 | Character | Slot | Name | Description | Cooldown |
 | - | - | - | - | - |
