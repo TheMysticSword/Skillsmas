@@ -22,7 +22,7 @@ namespace Skillsmas.Skills.Mage.Rock
             SkillsmasPlugin.config,
             "Artificer: Tectonic Shift",
             "Damage",
-            1200f,
+            200f,
             stringsToAffect: new List<string>
             {
                 "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION"

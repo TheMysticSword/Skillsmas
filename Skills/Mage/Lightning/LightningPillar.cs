@@ -63,7 +63,7 @@ namespace Skillsmas.Skills.Mage.Lightning
             SkillsmasPlugin.config,
             "Artificer: Thunderbolt",
             "Max Zaps",
-            3,
+            4,
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
         );
 
@@ -162,6 +162,8 @@ namespace Skillsmas.Skills.Mage.Lightning
             {
                 ownerBody = attachedBody;
                 enemySearch.teamMaskFilter.RemoveTeam(attachedBody.teamComponent.teamIndex);
+
+                Zap();
             }
 
             public void FixedUpdate()

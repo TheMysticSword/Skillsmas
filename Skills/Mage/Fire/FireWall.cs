@@ -22,7 +22,7 @@ namespace Skillsmas.Skills.Mage.Fire
             SkillsmasPlugin.config,
             "Artificer: Brimstone",
             "Damage Per Second",
-            100f,
+            150f,
             stringsToAffect: new List<string>
             {
                 "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION"
