@@ -85,6 +85,8 @@
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Request a <style=cIsUtility>permanent</style> Supply Beacon. <style=cIsUtility>Alternates</style> between the two of your chosen beacons.",
 
     "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Crystallize</style><style=cSub>Create crystals on hit that grant temporary barrier equal to <style=cIsHealing>{Fractional Barrier}%</style> of maximum health on pickup.</style>",
-    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>Revitalizing</style><style=cSub>Hitting enemies recovers health to all allies equal to <style=cIsHealing>{Flat Healing}</style> HP plus an additional <style=cIsHealing>{Fractional Healing}%</style> of <style=cIsUtility>your</style> maximum health.</style>"
+    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>Revitalizing</style><style=cSub>Hitting enemies recovers health to all allies equal to <style=cIsHealing>{Flat Healing}</style> HP plus an additional <style=cIsHealing>{Fractional Healing}%</style> of <style=cIsUtility>your</style> maximum health.</style>",
+    "KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_ROCK": "<style=cKeywordName>If Energetic Resonance is equipped</style><style=cKeywordName>Harden</style><style=cSub>Crystals also grant <style=cIsUtility>{Energetic Resonance Armor}</style> armor for <style=cIsUtility>{Energetic Resonance Duration}</style> seconds.\r\n<style=cIsUtility>Harden</style> lasts longer for each <style=cIsDamage>ROCK</style> skill.</style>",
+    "KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_WATER": "<style=cKeywordName>If Energetic Resonance is equipped</style><style=cKeywordName>Sanctify</style><style=cSub>Revitalizing also has a <style=cIsUtility>{Energetic Resonance Chance}%</style> chance to cleanse <style=cIsUtility>1</style> stack of a random debuff.\r\n<style=cIsUtility>Sanctify</style> chance is increased for each <style=cIsDamage>WATER</style> skill.</style>"
   }
 }

@@ -176,6 +176,9 @@ namespace Skillsmas.Skills.Mage.Ice
 
                     healthComponent.AddBarrier(totalFrozenTargets * barrier / 100f * healthComponent.fullBarrier);
                 }
+
+                if (SkillsmasPlugin.artificerExtendedEnabled)
+                    SoftDependencies.ArtificerExtendedSupport.TriggerAltPassiveSkillCast(outer.gameObject);
             }
 
             public void FreezeBodyServer(CharacterBody targetBody, float duration)

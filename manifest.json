@@ -1,6 +1,6 @@
 {
   "name": "Skillsmas",
-  "version_number": "1.2.0",
+  "version_number": "1.2.1",
   "website_url": "https://github.com/TheMysticSword/Skillsmas",
   "description": "Adds new skills. Has nothing to do with Christmas. Sorry!",
   "dependencies": [
@@ -13,6 +13,6 @@
     "RiskofThunder-R2API_Prefab-1.0.1",
     "RiskofThunder-R2API_RecalculateStats-1.2.0",
     "RiskofThunder-HookGenPatcher-1.2.3",
-    "TheMysticSword-MysticsRisky2Utils-2.0.14"
+    "TheMysticSword-MysticsRisky2Utils-2.0.15"
   ]
 }

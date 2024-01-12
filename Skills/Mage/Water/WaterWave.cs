@@ -55,10 +55,12 @@ namespace Skillsmas.Skills.Mage.Water
             skillDef.skillName = "Skillsmas_WaterWave";
             skillDef.skillNameToken = "MAGE_SKILLSMAS_SPECIAL_WATER_NAME";
             skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION";
-            skillDef.keywordTokens = new[]
+            var keywordTokens = new List<string>()
             {
                 "KEYWORD_SKILLSMAS_REVITALIZING"
             };
+            if (SkillsmasPlugin.artificerExtendedEnabled) keywordTokens.Add("KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_WATER");
+            skillDef.keywordTokens = keywordTokens.ToArray();
             skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/CrashingWave.png");
             skillDef.activationStateMachineName = "Body";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(SurfWave));
@@ -175,6 +177,9 @@ namespace Skillsmas.Skills.Mage.Water
                 characterBody.bodyFlags |= CharacterBody.BodyFlags.IgnoreFallDamage;
 
                 waveEffect = Object.Instantiate(waveEffectPrefab, footPosition, Util.QuaternionSafeLookRotation(surfDirection));
+
+                if (SkillsmasPlugin.artificerExtendedEnabled)
+                    SoftDependencies.ArtificerExtendedSupport.TriggerAltPassiveSkillCast(outer.gameObject);
             }
 
             private void OnMovementHit(ref CharacterMotor.MovementHitInfo movementHitInfo)

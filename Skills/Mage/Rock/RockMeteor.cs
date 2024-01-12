@@ -62,10 +62,12 @@ namespace Skillsmas.Skills.Mage.Rock
             skillDef.skillName = "Skillsmas_RockMeteor";
             skillDef.skillNameToken = "MAGE_SKILLSMAS_SPECIAL_ROCK_NAME";
             skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION";
-            skillDef.keywordTokens = new[]
+            var keywordTokens = new List<string>()
             {
                 "KEYWORD_SKILLSMAS_CRYSTALLIZE"
             };
+            if (SkillsmasPlugin.artificerExtendedEnabled) keywordTokens.Add("KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_ROCK");
+            skillDef.keywordTokens = keywordTokens.ToArray();
             skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Superbolide.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(DropMeteor));
@@ -256,6 +258,9 @@ namespace Skillsmas.Skills.Mage.Rock
                         crit = RollCrit()
                     });
                 }
+
+                if (SkillsmasPlugin.artificerExtendedEnabled)
+                    SoftDependencies.ArtificerExtendedSupport.TriggerAltPassiveSkillCast(outer.gameObject);
             }
 
             public override void OnSerialize(NetworkWriter writer)

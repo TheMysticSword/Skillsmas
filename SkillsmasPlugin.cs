@@ -26,13 +26,14 @@ namespace Skillsmas
     [BepInDependency(PrefabAPI.PluginGUID)]
     [BepInDependency(RecalculateStatsAPI.PluginGUID)]
     [BepInDependency(MysticsRisky2UtilsPlugin.PluginGUID)]
+    [BepInDependency(ArtificerExtended.ArtificerExtendedPlugin.guid, BepInDependency.DependencyFlags.SoftDependency)]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     public class SkillsmasPlugin : BaseUnityPlugin
     {
         public const string PluginGUID = "com.themysticsword.skillsmas";
         public const string PluginName = "Skillsmas";
-        public const string PluginVersion = "1.2.0";
+        public const string PluginVersion = "1.2.1";
 
         public static System.Reflection.Assembly executingAssembly;
         internal static System.Type declaringType;
@@ -41,6 +42,7 @@ namespace Skillsmas
         internal static BepInEx.Configuration.ConfigFile config;
 
         internal static ConfigOptions.ConfigurableValue<bool> ignoreBalanceConfig;
+        internal static bool artificerExtendedEnabled = false;
 
         private static AssetBundle _assetBundle;
         public static AssetBundle AssetBundle
@@ -82,6 +84,12 @@ namespace Skillsmas
                     iconSprite = Sprite.Create(iconTexture, new Rect(0, 0, iconTexture.width, iconTexture.height), new Vector2(0, 0), 100);
                 }
                 MysticsRisky2Utils.SoftDependencies.SoftDependencyManager.RiskOfOptionsDependency.RegisterModInfo(PluginGUID, PluginName, "Adds new skills. Has nothing to do with Christmas. Sorry.", iconSprite);
+            }
+
+            if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey(ArtificerExtended.ArtificerExtendedPlugin.guid))
+            {
+                artificerExtendedEnabled = true;
+                SoftDependencies.ArtificerExtendedSupport.Init();
             }
 
             MysticsRisky2Utils.ContentManagement.ContentLoadHelper.PluginAwakeLoad<BaseGenericLoadable>(executingAssembly);
@@ -279,6 +287,7 @@ namespace Skillsmas
             public static BuffDef Skillsmas_MarkedEnemyKill;
             public static BuffDef Skillsmas_ChainKillBonusDamage;
             public static BuffDef Skillsmas_ToolbotUpdated;
+            public static BuffDef Skillsmas_Harden;
         }
     }
 }

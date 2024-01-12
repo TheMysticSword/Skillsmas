@@ -60,10 +60,12 @@ namespace Skillsmas.Skills.Mage.Rock
             skillDef.skillName = "Skillsmas_RockPlatform";
             skillDef.skillNameToken = "MAGE_SKILLSMAS_UTILITY_ROCK_NAME";
             skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION";
-            skillDef.keywordTokens = new[]
+            var keywordTokens = new List<string>()
             {
                 "KEYWORD_SKILLSMAS_CRYSTALLIZE"
             };
+            if (SkillsmasPlugin.artificerExtendedEnabled) keywordTokens.Add("KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_ROCK");
+            skillDef.keywordTokens = keywordTokens.ToArray();
             skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/TectonicShift.png");
             skillDef.activationStateMachineName = "Body";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(RockPlatformLeap));

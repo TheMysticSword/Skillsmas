@@ -169,6 +169,9 @@ namespace Skillsmas
                         forward.Normalize();
                         var vector = Vector3.Cross(Vector3.up, forward);
                         CreateWall(areaIndicatorInstance.transform.position, Util.QuaternionSafeLookRotation(vector));
+
+                        if (SkillsmasPlugin.artificerExtendedEnabled)
+                            SoftDependencies.ArtificerExtendedSupport.TriggerAltPassiveSkillCast(outer.gameObject);
                     }
                 }
                 else

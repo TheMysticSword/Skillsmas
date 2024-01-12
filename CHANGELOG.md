@@ -1,3 +1,10 @@
+## 1.2.1
+* Added support for ArtificerExtended's Energetic Resonance passive
+	* Fire, lightning and ice skills from this mod now count towards Energetic Resonance
+	* While Energetic Resonance is active:
+		* Picking up crystals from Crystallize also grants 20 armor for 3 seconds. The amount of rock skills equipped affects the buff duration.
+		* Hitting enemies with Revitalizing skills also has a 5% chance to cleanse 1 stack of a random debuff. The amount of water skills equipped affects the cleansing chance.
+* Fixed Russian translation not working
 ## 1.2.0
 * Added 4 new Artificer skills:
 	* Water Bolt

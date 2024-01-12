@@ -1,3 +1,5 @@
+using Mono.Cecil.Cil;
+using MonoMod.Cil;
 using MysticsRisky2Utils;
 using R2API;
 using RoR2;
@@ -17,6 +19,35 @@ namespace Skillsmas.DamageTypes
 		
 		public static ConfigOptions.ConfigurableValue<float> flatBarrier;
 		public static ConfigOptions.ConfigurableValue<float> fractionalBarrier;
+
+		public static ConfigOptions.ConfigurableValue<float> energeticResonanceArmor = ConfigOptions.ConfigurableValue.CreateFloat(
+			SkillsmasPlugin.PluginGUID,
+			SkillsmasPlugin.PluginName,
+			SkillsmasPlugin.config,
+			"Keyword: Crystallize",
+			"Energetic Resonance Armor",
+			20f,
+			description: "Effect granted by the Energetic Resonance passive from the ArtificerExtended mod",
+			stringsToAffect: new List<string>
+			{
+				"KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_ROCK"
+			},
+			useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
+		);
+		public static ConfigOptions.ConfigurableValue<float> energeticResonanceDuration = ConfigOptions.ConfigurableValue.CreateFloat(
+			SkillsmasPlugin.PluginGUID,
+			SkillsmasPlugin.PluginName,
+			SkillsmasPlugin.config,
+			"Keyword: Crystallize",
+			"Energetic Resonance Duration",
+			3f,
+			description: "Effect granted by the Energetic Resonance passive from the ArtificerExtended mod",
+			stringsToAffect: new List<string>
+			{
+				"KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_ROCK"
+			},
+			useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
+		);
 
 		public override void OnPluginAwake()
         {
@@ -112,9 +143,28 @@ namespace Skillsmas.DamageTypes
 			projectileImpactExplosion.childrenProjectilePrefab = barrierCrystalPickupPrefab;
 
 			GenericGameEvents.OnHitEnemy += GenericGameEvents_OnHitEnemy;
+            IL.RoR2.Projectile.ProjectileExplosion.FireChild += ProjectileExplosion_FireChild;
 		}
 
-		private static void GenericGameEvents_OnHitEnemy(DamageInfo damageInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo attackerInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo victimInfo)
+        private void ProjectileExplosion_FireChild(ILContext il)
+        {
+			ILCursor c = new ILCursor(il);
+
+			if (c.TryGotoNext(
+				MoveType.AfterLabel,
+				x => x.MatchCallOrCallvirt<NetworkServer>("Spawn")
+			))
+			{
+				c.Emit(OpCodes.Ldarg_0);
+				c.EmitDelegate<System.Func<GameObject, ProjectileExplosion, GameObject>>((childGameObject, projectileExplosion) => {
+					if (SkillsmasPlugin.artificerExtendedEnabled)
+						SoftDependencies.ArtificerExtendedSupport.OnBarrierCrystalSpawned(childGameObject, projectileExplosion);
+					return childGameObject;
+				});
+			}
+		}
+
+        private static void GenericGameEvents_OnHitEnemy(DamageInfo damageInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo attackerInfo, MysticsRisky2UtilsPlugin.GenericCharacterInfo victimInfo)
 		{
 			if (damageInfo.procCoefficient > 0 && damageInfo.HasModdedDamageType(crystallizeDamageType) && attackerInfo.master && Util.CheckRoll(100f * damageInfo.procCoefficient, attackerInfo.master))
 			{
@@ -142,6 +192,7 @@ namespace Skillsmas.DamageTypes
 			public float fractionalBarrier;
 			
 			public bool alive = true;
+			public float hardenBuffDuration = 0f;
 
 			public void OnTriggerStay(Collider other)
 			{
@@ -150,6 +201,8 @@ namespace Skillsmas.DamageTypes
 					var body = other.GetComponent<CharacterBody>();
 					if (body)
 					{
+						alive = false;
+
 						var healthComponent = body.healthComponent;
 						if (healthComponent)
 						{
@@ -162,6 +215,12 @@ namespace Skillsmas.DamageTypes
 								}, true);
 							}
 						}
+
+						if (hardenBuffDuration > 0)
+                        {
+							body.AddTimedBuff(SkillsmasContent.Buffs.Skillsmas_Harden, hardenBuffDuration);
+                        }
+
 						Destroy(baseObject);
 					}
 				}

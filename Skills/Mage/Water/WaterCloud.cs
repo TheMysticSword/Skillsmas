@@ -43,10 +43,12 @@ namespace Skillsmas.Skills.Mage.Water
             skillDef.skillName = "Skillsmas_WaterCloud";
             skillDef.skillNameToken = "MAGE_SKILLSMAS_UTILITY_WATER_NAME";
             skillDef.skillDescriptionToken = "MAGE_SKILLSMAS_UTILITY_WATER_DESCRIPTION";
-            skillDef.keywordTokens = new[]
+            var keywordTokens = new List<string>()
             {
                 "KEYWORD_SKILLSMAS_REVITALIZING"
             };
+            if (SkillsmasPlugin.artificerExtendedEnabled) keywordTokens.Add("KEYWORD_SKILLSMAS_ARTIFICEREXTENDED_ALTPASSIVE_WATER");
+            skillDef.keywordTokens = keywordTokens.ToArray();
             skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/Cumulonimbus.png");
             skillDef.activationStateMachineName = "Weapon";
             skillDef.activationState = new EntityStates.SerializableEntityStateType(typeof(PrepWaterCloud));
