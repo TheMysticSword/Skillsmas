@@ -21,7 +21,7 @@ namespace Skillsmas.Skills.Mage.Water
             SkillsmasPlugin.config,
             "Artificer: Crashing Wave",
             "Damage Scaling",
-            125f,
+            150f,
             stringsToAffect: new List<string>
             {
                 "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION"
