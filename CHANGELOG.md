@@ -1,11 +1,11 @@
 ## 1.2.2
 * Artificer: Brimstone:
-	* Damage Per Second: ~~100%~ ⇒ 150%
+	* Damage Per Second: ~~100%~~ ⇒ 150%
 * Artificer: Thunderbolt:
 	* Max Zaps: ~~3~~ ⇒ 4
 		* The extra zap happens immediately on spawning
 * Artificer: Tectonic Shift:
-	* Damage: ~~1200%~ ⇒ 200%
+	* Damage: ~~1200%~~ ⇒ 200%
 * Artificer's Crashing Wave now has slight screenshake
 ## 1.2.1
 * Added support for ArtificerExtended's Energetic Resonance passive
