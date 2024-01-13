@@ -42,4 +42,5 @@ TheMysticSword - Coding, Placeholder Icons
 xeyfurr, Thingw - Icons
 ### Translations
 Brazilian Portuguese - Kauzok  
-Simplified Chinese - Meteorite1014
+Simplified Chinese - Meteorite1014  
+Spanish - Juhnter

@@ -1,0 +1,90 @@
+{
+  "es-ES": {
+    "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Máquina de Humo",
+    "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Crea una zona de humo duradera que otorga <style=cIsUtility>invisibilidad</style> a los aliados en su alcance.",
+
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_NAME": "Fiesta de Asesinatos",
+    "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION": "<style=cIsDamage>Devastador</style>. Disparar un tiro de revólver para <style=cIsDamage>{Damage}% de daño</style>. Las eliminaciones <style=cIsUtility>reinician el enfriamiento</style> y marca a un enemigo por <style=cIsUtility>{Mark Duration}</style> segundos hasta {Max Chain Kills} veces. Obtiene <style=cIsDamage>+{Bonus Per Mark Kill}% de daño por cada enemigo marcado eliminado</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_NAME": "Baño de sangre",
+    "BANDIT2_SKILLSMAS_SUPERBLEEDBARRAGE_DESCRIPTION": "Dispara <style=cIsDamage>{Shots}</style> balas de revólver para <style=cIsDamage>{Damage}% de daño</style> a enemigos <style=cIsHealth>hemorrágicos</style> en visión.",
+
+    "TOOLBOT_SKILLSMAS_CRATE_NAME": "Caja de transporte",
+    "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "Lanza una caja para <style=cIsDamage>{Damage}%</style> de daño. <style=cIsUtility>Puede ser empujado, utilizado como plataforma o para bloquear proyectiles.</style>",
+
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "Modo actualización",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Vuelve <style=cIsHealth>incapaz</style> de correr, salta y atacar por <style=cIsHealth>{Update Duration}</style> segundos, luego recupera <style=cIsHealing>{Healing}%</style> de HP y obtiene <style=cIsDamage>+{Attack Speed}%</style> velocidad de ataque por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Energy Shield",
+    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Agil</style>. Crea una muralla que hace <style=cIsDamage>{Damage Per Second}%</style> de daño por segundo y <style=cIsUtility>bloquea la mayoria de ataques</style>.",
+
+    "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Crioperno",
+    "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Congelador</style>. Dispara un tornillo <style=cIsUtility>de corto rango</style> por <style=cIsDamage>{Damage}% de daño</style>. Contiene hasta 4.",
+
+    "MAGE_SKILLSMAS_PRIMARY_ROCK_NAME": "Perno Geoda",
+    "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizar</style>. Dispara un tornillo para <style=cIsDamage>{Damage}% de daño</style>. Contiene hasta 4.",
+
+    "MAGE_SKILLSMAS_PRIMARY_WATER_NAME": "Perno de agua",
+    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizar</style>. Dispara un tornillo para <style=cIsDamage>{Damage}% de daño</style>. Contiene hasta 4.",
+
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Nano-cohete iluminado",
+    "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Encender</style>. Carga un <style=cIsDamage>ultrarrápido</style> nano-cohete que hace <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de daño.",
+
+    "MAGE_SKILLSMAS_SECONDARY_ROCK_NAME": "Nanopiedra moldeada",
+    "MAGE_SKILLSMAS_SECONDARY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizar</style>. Carga una nanopiedra <style=cIsDamage>rodante</style> que hace <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de daño.",
+
+    "MAGE_SKILLSMAS_SECONDARY_WATER_NAME": "Concentrated Nano-Stream",
+    "MAGE_SKILLSMAS_SECONDARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizar</style>. Carga un nano-corriente <style=cIsDamage>continuo</style>  que hace <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> de daño.",
+
+    "MAGE_SKILLSMAS_UTILITY_FIRE_NAME": "Azufre",
+    "MAGE_SKILLSMAS_UTILITY_FIRE_DESCRIPTION": "<style=cIsDamage>Encender</style>. Crear una pantalla que daña a los enemigos para <style=cIsDamage>{Damage Per Second}% de daño por segundo</style> y <style=cIsDamage>quema</style> todo proyectil aliado.",
+
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_NAME": "Rayo",
+    "MAGE_SKILLSMAS_UTILITY_LIGHTNING_DESCRIPTION": "<style=cIsDamage>Aturdimiento</style>. Crea un pilar que hiere periódicamente a los enemigos cercanos durante <style=cIsDamage>{Damage}% de daño</style>.",
+
+    "MAGE_SKILLSMAS_UTILITY_WATER_NAME": "Cumulonimbos",
+    "MAGE_SKILLSMAS_UTILITY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizar</style>. Crea una nube de lluvia que daña a los enemigos por <style=cIsDamage>{Damage Per Second}% daño por segundo</style>.",
+
+    "MAGE_SKILLSMAS_UTILITY_ROCK_NAME": "Cambio tectónico",
+    "MAGE_SKILLSMAS_UTILITY_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizar</style>. Crea una plataforma debajo de ti que lastima a los enemigos por <style=cIsDamage>{Damage}% damage</style> al momento de la creacion.",
+
+    "MAGE_SKILLSMAS_SPECIAL_ICE_NAME": "Escarcha Flash",
+    "MAGE_SKILLSMAS_SPECIAL_ICE_DESCRIPTION": "<style=cIsUtility>Congelación</style>. Crea una ráfaga de frío a tu alrededor para <style=cIsDamage>{Damage}%</style> de daño y obtiene <style=cIsHealing>{Barrier}% de barrera temporal</style> por cada enemigo congelado.",
+
+    "MAGE_SKILLSMAS_SPECIAL_ROCK_NAME": "Superbólido",
+    "MAGE_SKILLSMAS_SPECIAL_ROCK_DESCRIPTION": "<style=cIsDamage>Cristalizar</style>. Lanza un meteoro que inflige <style=cIsDamage>{Damage}%</style> de daño y petrifica a los enemigos por <style=cIsUtility>{Petrification Duration}s</style>.",
+
+    "MAGE_SKILLSMAS_SPECIAL_WATER_NAME": "Ola de Choque",
+    "MAGE_SKILLSMAS_SPECIAL_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizar</style>. Surfea hacia delante, infligiendo un daño igual a <style=cIsDamage>{Damage Scaling}%</style> de tu salud máxima al impactar.",
+
+    "MERC_SKILLSMAS_BLADEROLL_NAME": "Contracorrientes",
+    "MERC_SKILLSMAS_BLADEROLL_DESCRIPTION": "Rueda hacia delante hasta <style=cIsUtility>{Max Duration}</style> segundos, infligiendo <style=cIsDamage>{Damage}%</style> de daño. La duración de rodar afecta al enfriamiento.",
+
+    "MERC_SKILLSMAS_ZANDATSU_NAME": "Zandatsu",
+    "MERC_SKILLSMAS_ZANDATSU_DESCRIPTION": "Avanza hacia adelante para infligir <style=cIsDamage>{Damage}%</style> de daño a un enemigo, ejecutando si tiene <style=cIsDamage>{Execute Threshold}%</style> de HP o bajo y regenera <style=cIsHealing>{Healing}%</style> de tu vida maxima por muerte.",
+
+    "MERC_SKILLSMAS_XSLASH_NAME": "Tormentas cruzadas",
+    "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "Realiza un gran tajo diagonal para <style=cIsDamage>{Damage}%</style> de daño. Puede contener hasta 2.",
+
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Puño cremallera",
+    "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Dispara tu guantelete hacia adelante, <style=cIsUtility>tirando rápidamente</style> hacia el objetivo tras retraer inmediatamente el guantelete.",
+
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_NAME": "Reforzar",
+    "LOADER_SKILLSMAS_STOPBARRIERDECAY_DESCRIPTION": "<style=cIsUtility>Detiene</style> el decaimiento temporal de la barrera y aumenta la velocidad de ataque en <style=cIsDamage>{Attack Speed}%</style> por <style=cIsUtility>{Buff Duration}</style> segundos.",
+
+    "CROCO_SKILLSMAS_POISONBUBBLE_NAME": "Organismo autónomo",
+    "CROCO_SKILLSMAS_POISONBUBBLE_DESCRIPTION": "<style=cIsHealing>Venenoso</style>. Crea una burbuja de movimiento lento que inflinge <style=cIsDamage>{Damage}%</style> de daño por segundo a los enemigos cercanos.",
+
+    "CROCO_SKILLSMAS_POISONEXTENSION_NAME": "Neutropenia",
+    "CROCO_SKILLSMAS_POISONEXTENSION_DESCRIPTION": "Libera una enfermedad mortal que elimina el veneno enemigo para propagarlo hasta <style=cIsDamage>{Max Targets}</style> objetivos por <style=cIsUtility>{Duration Multiplier}x</style> de duracion.",
+
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_NAME": "Mano Amiga",
+    "CAPTAIN_SKILLSMAS_LENDMICROBOTS_DESCRIPTION": "Da <style=cIsUtility>Microbots defensivos</style> a un aliado durante <style=cIsUtility>{Duration}</style> segundos.",
+
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "Baliza de suministro reutilizable",
+    "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "Solicita una baliza de suministro <style=cIsUtility>permanente</style>. <style=cIsUtility>Alterna</style> entre las dos balizas elegidas.",
+
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>Cristalizar</style><style=cSub>Crea cristales al golpear que otorgan una barrera temporal igual a <style=cIsHealing>{Fractional Barrier}%</style> de salud máxima al recogerlo.</style>",
+    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>Revitalizar</style><style=cSub>Al golpear a los enemigos, todos los aliados recuperan una cantidad de salud igual a <style=cIsHealing>{Flat Healing}</style> HP más un adicional <style=cIsHealing>{Fractional Healing}%</style> de <style=cIsUtility>tu</style> vida maxima.</style>"
+  }
+}
