@@ -84,7 +84,7 @@
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_NAME": "可复用补给信标",
     "CAPTAIN_SKILLSMAS_REUSEABLEBEACON_DESCRIPTION": "呼叫一个<style=cIsUtility>永久性的</style>补给信标。在已选择的两个信标间<style=cIsUtility>交替切换</style>。",
 
-    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>结晶</style><style=cSub>命中目标时生成水晶，捡拾时可获得相当于<style=cIsHealing>{Fractional Barrier}%</style>最大生命值的临时屏障。</style>"
-    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>回复</style><style=cSub>命中敌人为所有友方单位回复<style=cIsHealing>{Flat Healing}</style> 点HP，外加相当于<style=cIsUtility>你的</style>最大生命值的<style=cIsHealing>{Fractional Healing}%</style>的HP。</style>"
+    "KEYWORD_SKILLSMAS_CRYSTALLIZE": "<style=cKeywordName>结晶</style><style=cSub>命中目标时生成水晶，捡拾时可获得相当于<style=cIsHealing>{Fractional Barrier}%</style>最大生命值的临时屏障。</style>",
+    "KEYWORD_SKILLSMAS_REVITALIZING": "<style=cKeywordName>回复</style><style=cSub>命中敌人为所有友方单位回复<style=cIsHealing>{Flat Healing}</style> 点HP，外加相当于<style=cIsUtility>你的</style>最大生命值的<style=cIsHealing>{Fractional Healing}%</style>的HP。</style>",
   }
 }
