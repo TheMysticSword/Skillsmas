@@ -1,3 +1,10 @@
+## 1.2.3
+* Artificer: Brimstone:
+	* Damage Per Second: ~~150%~~ ⇒ 100%
+* Artificer: Crashing Wave:
+	* Damage Scaling: ~~125%~~ ⇒ 150%
+* Added Spanish translation by Juhnter
+* Updated Brazilian Portuguese and Simplifed Chinese translations
 ## 1.2.2
 * Artificer: Brimstone:
 	* Damage Per Second: ~~100%~~ ⇒ 150%
