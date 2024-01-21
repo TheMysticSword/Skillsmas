@@ -13,7 +13,7 @@
     "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "Бросает ящик на <style=cIsDamage>{Damage}%</style> урона. <style=cIsUtility>Можно толкать, использовать как платформу или для блокировки снарядов.</style>",
 
     "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "Режим обновления",
-    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "Вы <style=cIsHealth>теряете способность</style> бежать, прыгать и атаковать на <style=cIsHealth>{Update Duration}</style> секунд, затем восстанавливаете <style=cIsHealing>{Healing}%</style> ОЗ и получаете <style=cIsDamage>+{Attack Speed}%</style> скорости атаки на <style=cIsUtility>{Buff Duration}</style> секунд.",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "<style=cIsHealth>Безвредность</style>. Вводит в состояние обновления на <style=cIsHealth>{Update Duration}</style> сек., затем восстанавливает <style=cIsHealing>{Healing}%</style> ОЗ и даёт <style=cIsDamage>+{Attack Speed}%</style> скорости атаки на <style=cIsUtility>{Buff Duration}</style> секунд.",
 
     "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Энергощит",
     "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Подвижность.</style> Создаёт стену, которая наносит <style=cIsDamage>{Damage Per Second}%</style> урона в секунду и <style=cIsUtility>блокирует большинство атак</style>.",
