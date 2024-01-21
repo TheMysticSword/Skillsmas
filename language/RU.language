@@ -1,5 +1,26 @@
 {
   "RU": {
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_NAME": "Стрельба очередью",
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_DESCRIPTION": "Стреляет во врага с высокой скорострельностью и наносит <style=cIsDamage>{Damage}%</style> урона. Имеет <style=cIsDamage>{Max Stock}</style> патронов.",
+
+    "COMMANDO_SKILLSMAS_HEAVYBULLETS_NAME": "Тяжёлые пули",
+    "COMMANDO_SKILLSMAS_HEAVYBULLETS_DESCRIPTION": "Медленно стреляет во врага и наносит <style=cIsDamage>{Damage}%</style> урона.",
+
+    "COMMANDO_SKILLSMAS_TRUEFMJ_NAME": "Фазовый луч",
+    "COMMANDO_SKILLSMAS_TRUEFMJ_DESCRIPTION": "Вы простреливаете <style=cIsDamage>врагов насквозь</style>, нанося <style=cIsDamage>{Damage}%</style> урона и отбрасывая их назад.",
+
+    "COMMANDO_SKILLSMAS_JETUP_NAME": "Тактический взлёт",
+    "COMMANDO_SKILLSMAS_JETUP_DESCRIPTION": "<style=cIsDamage>Поджог</style>. Взлетает вверх, нанося <style=cIsDamage>{Damage}%</style> урона.",
+
+    "HUNTRESS_SKILLSMAS_TRACKERGLAIVE_NAME": "Отслеживающая глефа",
+    "HUNTRESS_SKILLSMAS_TRACKERGLAIVE_DESCRIPTION": "Бросьте копьё, которое наносит <style=cIsDamage>{Damage}%</style> урона и отмечает врага. <style=cIsUtility>Самонаводящиеся стрелы также будут атаковать врага, в которого попало копьё</style>.",
+
+    "HUNTRESS_SKILLSMAS_MANUALAIM_NAME": "Прицеливание",
+    "HUNTRESS_SKILLSMAS_MANUALAIM_DESCRIPTION": "Включает и выключает режим <style=cIsUtility>прицеливания вручную</style>. Основной навык будет заряжать стрелу, наносящую <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона и <style=cIsDamage>поджигающую</style> при полном заряде.",
+
+    "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_NAME": "Прицеливание вручную",
+    "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_DESCRIPTION": "<style=cIsUtility>Подвижность</style>. Заряжает стрелу, наносящую <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона и <style=cIsDamage>поджигающую</style> при полном заряде.",
+
     "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Дым-машина",
     "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Создаёт продолжительную дымовую зону, которая делает союзников внутри зоны <style=cIsUtility>невидимыми</style>.",
 
@@ -65,6 +86,12 @@
 
     "MERC_SKILLSMAS_XSLASH_NAME": "Пересекающие штормы",
     "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "Выполняет крупный диагональный рубящий удар, наносящий <style=cIsDamage>{Damage}%</style> урона. Можно иметь при себе до 2 зарядов.",
+
+    "TREEBOT_SKILLSMAS_SPIKYROOTS_NAME": "Искоренение",
+    "TREEBOT_SKILLSMAS_SPIKYROOTS_DESCRIPTION": "<style=cIsHealth>{HP Cost}% ОЗ</style>. Атакует шипастыми корнями на <style=cIsDamage>{Damage}%</style> урона. <style=cIsHealing>Каждое попадание восстанавливает ваше здоровье</style>.",
+
+    "TREEBOT_SKILLSMAS_WALKINGHEALER_NAME": "ДИРЕКТИВА: Стимуляция",
+    "TREEBOT_SKILLSMAS_WALKINGHEALER_DESCRIPTION": "<style=cIsHealth>Безвредность</style>. Лечит союзников поблизости на <style=cIsHealing>{Healing}%</style> ОЗ в секунду.",
 
     "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Молниеносный кулак",
     "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Выстрел перчаткой, <style=cIsUtility>быстро притягивающий</style> вас к цели после моментального возврата перчатки.",

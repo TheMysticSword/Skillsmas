@@ -1,5 +1,6 @@
 using R2API;
 using RoR2;
+using RoR2.Orbs;
 using RoR2.Projectile;
 using System.Collections.Generic;
 using UnityEngine;
@@ -74,6 +75,76 @@ namespace Skillsmas
             }
 		}
 	}
+
+    public class SkillsmasProjectileHealOwnerOnDamageInflicted : MonoBehaviour, IOnDamageInflictedServerReceiver
+    {
+        public ProjectileController projectileController;
+        public float flatHealing;
+        public float fractionalHealing;
+        public float healingFromDamageDealt;
+        public int maxInstancesOfHealing = -1;
+        public int instancesOfHealing = 0;
+
+        public void Awake()
+        {
+            projectileController = GetComponent<ProjectileController>();
+        }
+
+        public void OnDamageInflictedServer(DamageReport damageReport)
+        {
+            if (maxInstancesOfHealing != -1 && instancesOfHealing >= maxInstancesOfHealing)
+                return;
+
+            if (projectileController.owner)
+            {
+                var ownerHealthComponent = projectileController.owner.GetComponent<HealthComponent>();
+                if (ownerHealthComponent)
+                {
+                    var healOrb = new HealOrb
+                    {
+                        origin = transform.position,
+                        target = ownerHealthComponent.body.mainHurtBox,
+                        healValue = flatHealing + ownerHealthComponent.fullHealth * fractionalHealing + healingFromDamageDealt * damageReport.damageDealt,
+                        overrideDuration = 0.3f
+                    };
+                    OrbManager.instance.AddOrb(healOrb);
+
+                    instancesOfHealing++;
+                }
+            }
+        }
+    }
+
+    public class SkillsmasProjectileSoundAdder : MonoBehaviour
+    {
+        public ProjectileOverlapAttack projectileOverlapAttack;
+        public NetworkSoundEventDef impactSoundEventDef;
+
+        public void Start()
+        {
+            if (projectileOverlapAttack) projectileOverlapAttack.attack.impactSound = impactSoundEventDef.index;
+        }
+    }
+
+    public class SkillsmasAlignToRigidbodyVelocity : MonoBehaviour
+    {
+        public Rigidbody rigidbody;
+        public float minimumVelocitySqrMagnitude = 1f;
+        public ProjectileStickOnImpact projectileStickOnImpact;
+
+        public void Awake()
+        {
+            rigidbody = GetComponent<Rigidbody>();
+            projectileStickOnImpact = GetComponent<ProjectileStickOnImpact>();
+        }
+
+        public void LateUpdate()
+        {
+            if (rigidbody && rigidbody.velocity.sqrMagnitude >= minimumVelocitySqrMagnitude &&
+                (!projectileStickOnImpact || !projectileStickOnImpact.stuck))
+                transform.forward = rigidbody.velocity.normalized;
+        }
+    }
 
     public class PrepCustomWall : EntityStates.BaseState
     {

@@ -1,5 +1,26 @@
 {
   "strings": {
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_NAME": "Burst Fire",
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_DESCRIPTION": "Shoot an enemy at an extremely high fire rate for <style=cIsDamage>{Damage}%</style> damage. Has <style=cIsDamage>{Max Stock}</style> ammo.",
+
+    "COMMANDO_SKILLSMAS_HEAVYBULLETS_NAME": "Heavy Bullets",
+    "COMMANDO_SKILLSMAS_HEAVYBULLETS_DESCRIPTION": "Slowly shoot an enemy for <style=cIsDamage>{Damage}%</style> damage.",
+
+    "COMMANDO_SKILLSMAS_TRUEFMJ_NAME": "Phase Beam",
+    "COMMANDO_SKILLSMAS_TRUEFMJ_DESCRIPTION": "Shoot <style=cIsDamage>through enemies</style> for <style=cIsDamage>{Damage}%</style> damage, knocking them back.",
+
+    "COMMANDO_SKILLSMAS_JETUP_NAME": "Tactical Lift-Off",
+    "COMMANDO_SKILLSMAS_JETUP_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Launch upwards, dealing <style=cIsDamage>{Damage}%</style> damage.",
+
+    "HUNTRESS_SKILLSMAS_TRACKERGLAIVE_NAME": "Tracker Glaive",
+    "HUNTRESS_SKILLSMAS_TRACKERGLAIVE_DESCRIPTION": "Throw a glaive for <style=cIsDamage>{Damage}%</style> damage. <style=cIsUtility>Homing arrows will also attack the enemy struck by the glaive</style>.",
+
+    "HUNTRESS_SKILLSMAS_MANUALAIM_NAME": "Take Aim",
+    "HUNTRESS_SKILLSMAS_MANUALAIM_DESCRIPTION": "Toggle <style=cIsUtility>manual aiming</style> mode. Your Primary skill will charge up an arrow for <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage that <style=cIsDamage>ignites</style> on full charge.",
+
+    "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_NAME": "Manual Aim",
+    "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_DESCRIPTION": "<style=cIsUtility>Agile</style>. Charge up an arrow for <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage that <style=cIsDamage>ignites</style> on full charge.",
+
     "BANDIT2_SKILLSMAS_SMOKEZONE_NAME": "Smoke Machine",
     "BANDIT2_SKILLSMAS_SMOKEZONE_DESCRIPTION": "Create a lasting smoke zone that grants <style=cIsUtility>invisibility</style> to allies in its range.",
 
@@ -65,6 +86,12 @@
 
     "MERC_SKILLSMAS_XSLASH_NAME": "Crossing Storms",
     "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "Perform a large diagonal slash for <style=cIsDamage>{Damage}%</style> damage. Can hold up to 2.",
+
+    "TREEBOT_SKILLSMAS_SPIKYROOTS_NAME": "Uprooting",
+    "TREEBOT_SKILLSMAS_SPIKYROOTS_DESCRIPTION": "<style=cIsHealth>{HP Cost}% HP</style>. Attack with spiky roots for <style=cIsDamage>{Damage}%</style> damage. <style=cIsHealing>Heals for every target hit</style>.",
+
+    "TREEBOT_SKILLSMAS_WALKINGHEALER_NAME": "DIRECTIVE: Stimulate",
+    "TREEBOT_SKILLSMAS_WALKINGHEALER_DESCRIPTION": "<style=cIsHealth>Harmless</style>. Heal nearby allies for <style=cIsHealing>{Healing}%</style> HP per second.",
 
     "LOADER_SKILLSMAS_QUICKGRAPPLE_NAME": "Zip Fist",
     "LOADER_SKILLSMAS_QUICKGRAPPLE_DESCRIPTION": "Fire your gauntlet forward, <style=cIsUtility>quickly pulling</style> you to the target after immediately retracting the gauntlet.",
