@@ -42,6 +42,7 @@ namespace Skillsmas.Skills.Bandit
             3f,
             stringsToAffect: new List<string>
             {
+                "KEYWORD_SKILLSMAS_KILLCHAIN",
                 "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION"
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -55,6 +56,7 @@ namespace Skillsmas.Skills.Bandit
             5,
             stringsToAffect: new List<string>
             {
+                "KEYWORD_SKILLSMAS_KILLCHAIN",
                 "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION"
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -68,6 +70,7 @@ namespace Skillsmas.Skills.Bandit
             10f,
             stringsToAffect: new List<string>
             {
+                "KEYWORD_SKILLSMAS_KILLCHAIN",
                 "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION"
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -81,6 +84,7 @@ namespace Skillsmas.Skills.Bandit
             20f,
             stringsToAffect: new List<string>
             {
+                "KEYWORD_SKILLSMAS_KILLCHAIN",
                 "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION"
             },
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
@@ -101,7 +105,8 @@ namespace Skillsmas.Skills.Bandit
             skillDef.skillDescriptionToken = "BANDIT2_SKILLSMAS_CHAINKILLBUFF_DESCRIPTION";
             skillDef.keywordTokens = new[]
             {
-                "KEYWORD_SLAYER"
+                "KEYWORD_SLAYER",
+                "KEYWORD_SKILLSMAS_KILLCHAIN"
             };
             skillDef.icon = SkillsmasPlugin.AssetBundle.LoadAsset<Sprite>("Assets/Mods/Skillsmas/SkillIcons/MurderParty.jpg");
             skillDef.activationStateMachineName = "Weapon";
