@@ -1,3 +1,27 @@
+## 1.3.0
+* Added 8 new skills:
+	* Commando:
+		* Burst Fire (Primary)
+		* Heavy Bullets (Primary)
+		* Phase Beam (Secondary)
+		* Lift-Off (Utility)
+	* Huntress:
+		* Tracker Glaive (Secondary)
+		* Take Aim (Special)
+	* REX:
+		* Uprooting (Primary)
+		* DIRECTIVE: Stimulate (Special)
+* MUL-T: Update Mode:
+	* Update Duration: ~~5s~~ ⇒ 2s
+		* No longer scales with attack speed
+	* Buff Duration: ~~10s~~ ⇒ 7s
+* Artificer: Water Bolt:
+	* Now has slight homing
+* Artificer: Cumulonimbus:
+	* Proc Coefficient: ~~0.2~~ ⇒ 0.1
+		* This was mainly changed to reduce the amount of healing done by the skill from 1% HP/s per enemy to 0.5% HP/s per enemy
+* Skill config options for "Cancel Sprint", "Force Sprint", "Cancelled From Sprinting" and "Must Key Press" now don't require unchecking the "Ignore Balance Changes" option
+* Moved Bandit's Murder Party kill chain mechanic description to its own keyword
 ## 1.2.3
 * Artificer: Brimstone:
 	* Damage Per Second: ~~150%~~ ⇒ 100%
