@@ -2,6 +2,7 @@ using RoR2;
 using UnityEngine;
 using RoR2.Skills;
 using MysticsRisky2Utils;
+using System.Collections.Generic;
 
 namespace Skillsmas.Skills
 {
@@ -9,6 +10,17 @@ namespace Skillsmas.Skills
     {
         public SkillDef skillDef;
         public SkillFamily.Variant skillFamilyVariant;
+
+        public ConfigOptions.ConfigurableValue<float> configCooldown;
+        public ConfigOptions.ConfigurableValue<int> configMaxStock;
+        public ConfigOptions.ConfigurableValue<int> configRechargeStock;
+        public ConfigOptions.ConfigurableValue<int> configRequiredStock;
+        public ConfigOptions.ConfigurableValue<int> configStockToConsume;
+        public ConfigOptions.ConfigurableValue<bool> configCancelSprint;
+        public ConfigOptions.ConfigurableValue<bool> configForceSprint;
+        public ConfigOptions.ConfigurableValue<bool> configCancelledFromSprinting;
+        public ConfigOptions.ConfigurableValue<bool> configIsCombatSkill;
+        public ConfigOptions.ConfigurableValue<bool> configMustKeyPress;
 
         public virtual System.Type GetSkillDefType()
         {
@@ -26,7 +38,7 @@ namespace Skillsmas.Skills
 
         public void SetUpValuesAndOptions(string skillName, float baseRechargeInterval, int baseMaxStock, int rechargeStock, int requiredStock, int stockToConsume, bool cancelSprintingOnActivation, bool forceSprintDuringState, bool canceledFromSprinting, bool isCombatSkill, bool mustKeyPress)
         {
-            ConfigOptions.ConfigurableValue.CreateFloat(
+            configCooldown = ConfigOptions.ConfigurableValue.CreateFloat(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -36,7 +48,7 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.baseRechargeInterval = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateInt(
+            configMaxStock = ConfigOptions.ConfigurableValue.CreateInt(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -46,7 +58,7 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.baseMaxStock = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateInt(
+            configRechargeStock = ConfigOptions.ConfigurableValue.CreateInt(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -56,7 +68,7 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.rechargeStock = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateInt(
+            configRequiredStock = ConfigOptions.ConfigurableValue.CreateInt(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -66,7 +78,7 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.requiredStock = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateInt(
+            configStockToConsume = ConfigOptions.ConfigurableValue.CreateInt(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -76,37 +88,34 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.stockToConsume = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateBool(
+            configCancelSprint = ConfigOptions.ConfigurableValue.CreateBool(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
                 skillName,
                 "Cancel Sprint",
                 cancelSprintingOnActivation,
-                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.cancelSprintingOnActivation = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateBool(
+            configForceSprint = ConfigOptions.ConfigurableValue.CreateBool(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
                 skillName,
                 "Force Sprint",
                 forceSprintDuringState,
-                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.forceSprintDuringState = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateBool(
+            configCancelledFromSprinting = ConfigOptions.ConfigurableValue.CreateBool(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
                 skillName,
                 "Cancelled From Sprinting",
                 canceledFromSprinting,
-                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.canceledFromSprinting = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateBool(
+            configIsCombatSkill = ConfigOptions.ConfigurableValue.CreateBool(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
@@ -116,14 +125,13 @@ namespace Skillsmas.Skills
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.isCombatSkill = newValue
             );
-            ConfigOptions.ConfigurableValue.CreateBool(
+            configMustKeyPress = ConfigOptions.ConfigurableValue.CreateBool(
                 SkillsmasPlugin.PluginGUID,
                 SkillsmasPlugin.PluginName,
                 SkillsmasPlugin.config,
                 skillName,
                 "Must Key Press",
                 mustKeyPress,
-                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => skillDef.mustKeyPress = newValue
             );
         }
