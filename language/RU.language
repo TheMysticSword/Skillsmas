@@ -16,7 +16,7 @@
     "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "<style=cIsHealth>Безвредность</style>. Вводит в состояние обновления на <style=cIsHealth>{Update Duration}</style> сек., затем восстанавливает <style=cIsHealing>{Healing}%</style> ОЗ и даёт <style=cIsDamage>+{Attack Speed}%</style> скорости атаки на <style=cIsUtility>{Buff Duration}</style> секунд.",
 
     "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "Энергощит",
-    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Подвижность.</style> Создаёт стену, которая наносит <style=cIsDamage>{Damage Per Second}%</style> урона в секунду и <style=cIsUtility>блокирует большинство атак</style>.",
+    "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>Подвижность</style>. Создаёт стену, которая наносит <style=cIsDamage>{Damage Per Second}%</style> урона в секунду и <style=cIsUtility>блокирует большинство атак</style>.",
 
     "MAGE_SKILLSMAS_PRIMARY_ICE_NAME": "Крио-выстрел",
     "MAGE_SKILLSMAS_PRIMARY_ICE_DESCRIPTION": "<style=cIsUtility>Заморозка</style>. Выстрел снарядом <style=cIsUtility>для ближней дистанции</style>, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
