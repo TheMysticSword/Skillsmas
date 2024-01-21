@@ -114,6 +114,7 @@ namespace Skillsmas.Skills.Mage.Water
             FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileNetworkTransform>();
             var projectileSimple = FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 80f;
+            projectileSimple.updateAfterFiring = true;
             projectileSimple.lifetime = 2f;
             var projectileDamage = FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileDamage>();
             var projectileImpactExplosion = FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileImpactExplosion>();
@@ -137,7 +138,16 @@ namespace Skillsmas.Skills.Mage.Water
             var proximityDetonator = FireWaterBolt.projectilePrefabStatic.transform.Find("ProximityDetonator").gameObject.AddComponent<SkillsmasProjectileProximityDetonator>();
             proximityDetonator.myTeamFilter = FireWaterBolt.projectilePrefabStatic.GetComponent<TeamFilter>();
             proximityDetonator.projectileExplosion = projectileImpactExplosion;
-            
+            FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileTargetComponent>();
+            var projectileTargetFinder = FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileDirectionalTargetFinder>();
+            projectileTargetFinder.lookRange = 500f;
+            projectileTargetFinder.lookCone = 8f;
+            projectileTargetFinder.onlySearchIfNoTarget = true;
+            projectileTargetFinder.allowTargetLoss = false;
+            projectileTargetFinder.testLoS = true;
+            var projectileSteerTowardTarget = FireWaterBolt.projectilePrefabStatic.AddComponent<ProjectileSteerTowardTarget>();
+            projectileSteerTowardTarget.rotationSpeed = 25f;
+
             SkillsmasContent.Resources.projectilePrefabs.Add(FireWaterBolt.projectilePrefabStatic);
 
             FireWaterBolt.muzzleflashEffectPrefabStatic = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Mage/MuzzleflashMageLightning.prefab").WaitForCompletion();

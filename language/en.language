@@ -25,7 +25,7 @@
     "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Crystallize</style>. Fire a bolt for <style=cIsDamage>{Damage}% damage</style>. Hold up to 4.",
 
     "MAGE_SKILLSMAS_PRIMARY_WATER_NAME": "Water Bolt",
-    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Fire a bolt for <style=cIsDamage>{Damage}% damage</style>. Hold up to 4.",
+    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Revitalizing</style>. Fire a bolt for <style=cIsDamage>{Damage}% damage</style> that has slight <style=cIsUtility>homing</style>. Hold up to 4.",
 
     "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Lit Nano-Rocket",
     "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Ignite</style>. Charge up a <style=cIsDamage>superfast</style> nano-rocket that deals <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> damage.",

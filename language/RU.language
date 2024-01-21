@@ -25,7 +25,7 @@
     "MAGE_SKILLSMAS_PRIMARY_ROCK_DESCRIPTION": "<style=cIsDamage>Кристаллизация</style>. Выстрел снарядом, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
 
     "MAGE_SKILLSMAS_PRIMARY_WATER_NAME": "Водяной выстрел",
-    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Выстрел снарядом, который наносит врагам <style=cIsDamage>{Damage}% урона</style>. Можно иметь при себе до четырёх снарядов.",
+    "MAGE_SKILLSMAS_PRIMARY_WATER_DESCRIPTION": "<style=cIsUtility>Оживление</style>. Выстрел снарядом, который наносит врагам <style=cIsDamage>{Damage}% урона</style> и имеет небольшую <style=cIsUtility>самонаводку</style>. Можно иметь при себе до четырёх снарядов.",
 
     "MAGE_SKILLSMAS_SECONDARY_FIRE_NAME": "Подожжённая наноракета",
     "MAGE_SKILLSMAS_SECONDARY_FIRE_DESCRIPTION": "<style=cIsDamage>Поджог</style>. Бросок <style=cIsDamage>сверхбыстрой</style> наноракеты, которая наносит <style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style> урона.",
