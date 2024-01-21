@@ -111,7 +111,7 @@ namespace Skillsmas.Skills.Mage.Water
                 SkillsmasPlugin.config,
                 "Artificer: Cumulonimbus",
                 "Proc Coefficient",
-                0.2f,
+                0.1f,
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) => projectileController.procCoefficient = newValue
             );
