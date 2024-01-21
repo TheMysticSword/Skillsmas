@@ -162,7 +162,7 @@ namespace Skillsmas.Skills.Toolbot
             public override void FixedUpdate()
             {
                 base.FixedUpdate();
-                if (fixedAge >= duration)
+                if (fixedAge >= duration && isAuthority)
                 {
                     if (!buffGranted)
                     {
