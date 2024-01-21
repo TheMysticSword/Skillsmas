@@ -273,7 +273,7 @@ namespace Skillsmas.Skills.Merc
 
             public override EntityStates.InterruptPriority GetMinimumInterruptPriority()
             {
-                return EntityStates.InterruptPriority.Frozen;
+                return EntityStates.InterruptPriority.Pain;
             }
         }
     }
