@@ -18,7 +18,7 @@ namespace Skillsmas.Skills.Toolbot
             SkillsmasPlugin.config,
             "MUL-T: Update Mode",
             "Update Duration",
-            5f,
+            2f,
             stringsToAffect: new List<string>
             {
                 "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION"
@@ -66,7 +66,7 @@ namespace Skillsmas.Skills.Toolbot
             SkillsmasPlugin.config,
             "MUL-T: Update Mode",
             "Buff Duration",
-            10f,
+            7f,
             stringsToAffect: new List<string>
             {
                 "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION"
@@ -127,7 +127,7 @@ namespace Skillsmas.Skills.Toolbot
             public override void OnEnter()
             {
                 base.OnEnter();
-                duration = updateDuration / attackSpeedStat;
+                duration = updateDuration;
 
                 if (isAuthority)
                 {
