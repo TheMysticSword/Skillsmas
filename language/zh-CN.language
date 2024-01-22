@@ -33,8 +33,8 @@
     "TOOLBOT_SKILLSMAS_CRATE_NAME": "板条箱",
     "TOOLBOT_SKILLSMAS_CRATE_DESCRIPTION": "扔出一个板条箱，造成<style=cIsDamage>{Damage}%</style>伤害。<style=cIsUtility>可以被推来推去，用作平台或阻挡投射物。</style>",
 
-    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "升级模式",
-    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "<style=cIsHealth>无害化</style>。进入升级模式，持续<style=cIsHealth>{Update Duration}</style>秒，随后回复<style=cIsHealing>{Healing}%</style>生命值并获得<style=cIsDamage>+{Attack Speed}%</style>攻速，持续<style=cIsUtility>{Buff Duration}</style>秒。",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_NAME": "更新模式",
+    "TOOLBOT_SKILLSMAS_ROBOTUPDATE_DESCRIPTION": "<style=cIsHealth>无害化</style>。进入更新模式，持续<style=cIsHealth>{Update Duration}</style>秒，随后回复<style=cIsHealing>{Healing}%</style>生命值并获得<style=cIsDamage>+{Attack Speed}%</style>攻速，持续<style=cIsUtility>{Buff Duration}</style>秒。",
 
     "ENGI_SKILLSMAS_ENERGYSHIELD_NAME": "能量护盾",
     "ENGI_SKILLSMAS_ENERGYSHIELD_DESCRIPTION": "<style=cIsUtility>灵巧</style>，生成一堵护盾墙，造成每秒<style=cIsDamage>{Damage Per Second}%</style>伤害并<style=cIsUtility>阻挡大多数攻击</style>。",
