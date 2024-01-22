@@ -6,7 +6,7 @@
     "COMMANDO_SKILLSMAS_HEAVYBULLETS_NAME": "高威力弹药",
     "COMMANDO_SKILLSMAS_HEAVYBULLETS_DESCRIPTION": "以较低射速向敌人射击，造成<style=cIsDamage>{Damage}%</style>伤害。",
 
-    "COMMANDO_SKILLSMAS_TRUEFMJ_NAME": "脉冲激光",
+    "COMMANDO_SKILLSMAS_TRUEFMJ_NAME": "相位激光",
     "COMMANDO_SKILLSMAS_TRUEFMJ_DESCRIPTION": "射击<style=cIsDamage>穿透敌人</style>，造成<style=cIsDamage>{Damage}%</style>伤害，并击退他们。",
 
     "COMMANDO_SKILLSMAS_JETUP_NAME": "战术升空",
@@ -16,7 +16,7 @@
     "HUNTRESS_SKILLSMAS_TRACKERGLAIVE_DESCRIPTION": "投掷一把月刃，造成<style=cIsDamage>{Damage}%</style>伤害。<style=cIsUtility>追踪箭也会锁定被月刃击中的敌人</style>。",
 
     "HUNTRESS_SKILLSMAS_MANUALAIM_NAME": "瞄准",
-    "HUNTRESS_SKILLSMAS_MANUALAIM_DESCRIPTION": "切换为<style=cIsUtility>手动瞄准</style>模式。你的主要技能将变为蓄力并发射一发弓箭，造成<style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style>伤害，在满蓄力时额外造成<style=cIsDamage>点燃</style>",
+    "HUNTRESS_SKILLSMAS_MANUALAIM_DESCRIPTION": "切换为<style=cIsUtility>手动瞄准</style>模式。你的主要技能将变为蓄力并发射一发弓箭，造成<style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style>伤害，并在满蓄力时额外造成<style=cIsDamage>点燃</style>。",
 
     "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_NAME": "手动瞄准",
     "HUNTRESS_SKILLSMAS_MANUALAIMPRIMARY_DESCRIPTION": "<style=cIsUtility>灵巧</style>。蓄力并发射一发弓箭，造成<style=cIsDamage>{Minimum Damage}%-{Maximum Damage}%</style>伤害，在满蓄力时额外造成<style=cIsDamage>点燃</style>。",
@@ -88,7 +88,7 @@
     "MERC_SKILLSMAS_XSLASH_DESCRIPTION": "执行一次大范围十字斩，造成<style=cIsDamage>{Damage}%</style>伤害。可充能2次。",
 
     "TREEBOT_SKILLSMAS_SPIKYROOTS_NAME": "连根拔起",
-    "TREEBOT_SKILLSMAS_SPIKYROOTS_DESCRIPTION": "<style=cIsHealth>{HP Cost}%生命值</style>。用带刺的根攻击，，造成<style=cIsDamage>{Damage}%</style>伤害。<style=cIsHealing>每次命中都会恢复生命值</style>。",
+    "TREEBOT_SKILLSMAS_SPIKYROOTS_DESCRIPTION": "<style=cIsHealth>{HP Cost}%生命值</style>。用带刺的根攻击，造成<style=cIsDamage>{Damage}%</style>伤害。<style=cIsHealing>每次命中都会恢复生命值</style>。",
 
     "TREEBOT_SKILLSMAS_WALKINGHEALER_NAME": "指令：激发",
     "TREEBOT_SKILLSMAS_WALKINGHEALER_DESCRIPTION": "<style=cIsHealth>无害化</style>。以每秒<style=cIsHealing>{Healing}%</style>HP的速率治疗周围友方单位。",
