@@ -6,7 +6,7 @@ This mod adds 36 new skills.
 | Commando | Primary | Burst Fire | Shoot an enemy at an extremely high fire rate for **100%** damage. Has **60** ammo. | 2s |
 | Commando | Primary | Heavy Bullets | Slowly shoot an enemy for **320%** damage. | 0s |
 | Commando | Secondary | Phase Beam | Shoot **through enemies** for **280%** damage, knocking them back. | 3s |
-| Commando | Utility | Lift-Off | **Ignite**. Launch upwards, dealing **500%** damage. | 4s |
+| Commando | Utility | Tactical Lift-Off | **Ignite**. Launch upwards, dealing **500%** damage. | 4s |
 | Huntress | Secondary | Tracker Glaive | Throw a glaive for **640%** damage. **Homing arrows will also attack the enemy struck by the glaive**. | 7s |
 | Huntress | Special | Take Aim | Toggle **manual aiming** mode. Your Primary skill will charge up an arrow for **100%-800%** damage that **ignites** on full charge. | 12s |
 | Bandit | Utility | Smoke Machine | Create a lasting smoke zone that grants **invisibility** to allies in its range. | 16s |

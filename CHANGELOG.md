@@ -4,7 +4,7 @@
 		* Burst Fire (Primary)
 		* Heavy Bullets (Primary)
 		* Phase Beam (Secondary)
-		* Lift-Off (Utility)
+		* Tactical Lift-Off (Utility)
 	* Huntress:
 		* Tracker Glaive (Secondary)
 		* Take Aim (Special)
