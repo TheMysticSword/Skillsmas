@@ -54,3 +54,5 @@ xeyfurr, Thingw - Icons
 Brazilian Portuguese - Kauzok  
 Simplified Chinese - Meteorite1014  
 Spanish - Juhnter
+### External assets
+Contains assets from [Poly Haven](https://polyhaven.com/)
