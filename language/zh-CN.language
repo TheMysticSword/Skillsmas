@@ -1,7 +1,7 @@
 {
   "zh-CN": {
-    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_NAME": "点射",
-    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_DESCRIPTION": "以极高射速向敌人点射，造成<style=cIsDamage>{Damage}%</style>伤害。每轮点射发射<style=cIsDamage>{Max Stock}</style>发弹药",
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_NAME": "爆发射击",
+    "COMMANDO_SKILLSMAS_RAPIDFIREWITHRELOAD_DESCRIPTION": "以极高射速向敌人射击，造成<style=cIsDamage>{Damage}%</style>伤害。每轮至多发射<style=cIsDamage>{Max Stock}</style>发弹药",
 
     "COMMANDO_SKILLSMAS_HEAVYBULLETS_NAME": "高威力弹药",
     "COMMANDO_SKILLSMAS_HEAVYBULLETS_DESCRIPTION": "以较低射速向敌人射击，造成<style=cIsDamage>{Damage}%</style>伤害。",
