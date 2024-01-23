@@ -74,6 +74,14 @@ namespace Skillsmas.Skills.Mage.Water
             "Use Side Camera",
             true
         );
+        public static ConfigOptions.ConfigurableValue<bool> streamCancelledFromSprinting = ConfigOptions.ConfigurableValue.CreateBool(
+            SkillsmasPlugin.PluginGUID,
+            SkillsmasPlugin.PluginName,
+            SkillsmasPlugin.config,
+            "Artificer: Concentrated Nano-Stream",
+            "Stream Cancelled From Sprinting",
+            true
+        );
 
         public static CharacterCameraParams sideCameraParams;
         public static float sideCameraTransitionTime = 0.8f;
@@ -338,7 +346,7 @@ namespace Skillsmas.Skills.Mage.Water
 
                 if (isAuthority)
                 {
-                    if (characterBody.isSprinting)
+                    if (characterBody.isSprinting && streamCancelledFromSprinting)
                     {
                         outer.SetNextStateToMain();
                     }
