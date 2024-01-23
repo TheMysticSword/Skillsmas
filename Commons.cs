@@ -8,6 +8,35 @@ using UnityEngine.Networking;
 
 namespace Skillsmas
 {
+    public static class SkillsmasUtils
+    {
+        public static CameraRigController FindCameraRigController(GameObject viewer)
+        {
+            foreach (var cameraRigController in CameraRigController.readOnlyInstancesList)
+            {
+                if (cameraRigController.target == viewer &&
+                    cameraRigController._localUserViewer.cachedBodyObject == viewer &&
+                    !cameraRigController.hasOverride)
+                {
+                    return cameraRigController;
+                }
+            }
+            return null;
+        }
+
+        public static void UncorrectAimRay(GameObject viewer, ref Ray aimRay, float finalPointDistance = 1000f)
+        {
+            var cameraRigController = FindCameraRigController(viewer);
+            if (cameraRigController)
+            {
+                var finalPoint = cameraRigController.currentCameraState.position;
+                finalPointDistance += (finalPoint - aimRay.origin).magnitude;
+                finalPoint += finalPointDistance * (cameraRigController.currentCameraState.rotation * Vector3.forward);
+                aimRay.direction = (finalPoint - aimRay.origin).normalized;
+            }
+        }
+    }
+
     public class SkillsmasProjectileProximityDetonator : MonoBehaviour
     {
         public TeamFilter myTeamFilter;
