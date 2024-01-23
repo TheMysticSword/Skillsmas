@@ -34,7 +34,7 @@ namespace Skillsmas.Skills.Huntress
             SkillsmasPlugin.config,
             "Huntress: Take Aim",
             "Maximum Damage",
-            800f,
+            900f,
             stringsToAffect: new List<string>
             {
                 "HUNTRESS_SKILLSMAS_MANUALAIM_DESCRIPTION",
