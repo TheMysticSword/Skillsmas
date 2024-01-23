@@ -290,6 +290,11 @@ namespace Skillsmas.Skills.Huntress
 
             public override void OnExit()
             {
+                if (isAuthority)
+                {
+                    var weaponStateMachine = EntityStateMachine.FindByCustomName(gameObject, "Weapon");
+                    if (weaponStateMachine) weaponStateMachine.SetNextStateToMain();
+                }
                 if (primarySkillSlot) primarySkillSlot.UnsetSkillOverride(this, primarySkillDef, GenericSkill.SkillOverridePriority.Contextual);
                 activatorSkillSlot.DeductStock(1);
                 Util.PlaySound("Play_engi_seekerMissile_lockOn", gameObject);
