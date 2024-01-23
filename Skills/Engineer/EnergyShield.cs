@@ -45,6 +45,15 @@ namespace Skillsmas.Skills.Engi
             5f,
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
         );
+        public static ConfigOptions.ConfigurableValue<bool> unlockRotation = ConfigOptions.ConfigurableValue.CreateBool(
+            SkillsmasPlugin.PluginGUID,
+            SkillsmasPlugin.PluginName,
+            SkillsmasPlugin.config,
+            "Engineer: Energy Shield",
+            "Unlock Rotation",
+            false,
+            description: "By default, the shield can only be rotated around the Y axis"
+        );
 
         public override void OnPluginAwake()
         {
@@ -147,9 +156,14 @@ namespace Skillsmas.Skills.Engi
                 if (ownerBody && ownerBody.hasEffectiveAuthority)
                 {
                     transform.position = ownerBody.corePosition;
-                    var rot = ownerBody.inputBank.aimDirection;
-                    rot.y = 0;
-                    rot.Normalize();
+                    var aimRay = ownerBody.inputBank.GetAimRay();
+                    SkillsmasUtils.UncorrectAimRay(ownerBody.gameObject, ref aimRay);
+                    var rot = aimRay.direction;
+                    if (!unlockRotation)
+                    {
+                        rot.y = 0;
+                        rot.Normalize();
+                    }
                     transform.localRotation = Util.QuaternionSafeLookRotation(rot);
 
                     tickTimer += Time.fixedDeltaTime;
