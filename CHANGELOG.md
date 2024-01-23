@@ -2,7 +2,9 @@
 * Huntress: Take Aim:
 	* Projectile Speed: ~~120m/s~~ ⇒ 160m/s
 		* Can now be configured
+	* Damage: ~~100%-800%~~ ⇒ 100%-900%
 	* Reduced enemy knockback force
+	* Now force-releases the charged shot on exiting manual aiming mode
 * Added an "Unlock Rotation" option for Engineer's Energy Shield
 * Added a "Stream Cancelled From Sprinting" option for Artificer's Concentrated Nano-Stream
 * Improved the aiming accuracy of Artificer's Concentrated Nano-Stream
