@@ -74,7 +74,7 @@ namespace Skillsmas.Skills.Mage.Rock
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;
             SetUpValuesAndOptions(
                 "Artificer: Superbolide",
-                baseRechargeInterval: 12f,
+                baseRechargeInterval: 8f,
                 baseMaxStock: 1,
                 rechargeStock: 1,
                 requiredStock: 1,

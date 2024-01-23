@@ -90,7 +90,7 @@ namespace Skillsmas.Skills.Mage.Ice
             skillDef.interruptPriority = EntityStates.InterruptPriority.Skill;
             SetUpValuesAndOptions(
                 "Artificer: Flash Frost",
-                baseRechargeInterval: 9f,
+                baseRechargeInterval: 8f,
                 baseMaxStock: 1,
                 rechargeStock: 1,
                 requiredStock: 1,
