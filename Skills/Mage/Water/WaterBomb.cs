@@ -376,6 +376,7 @@ namespace Skillsmas.Skills.Mage.Water
             public Ray GetBeamRay()
             {
                 var beamRay = GetAimRay();
+                SkillsmasUtils.UncorrectAimRay(gameObject, ref beamRay, 35f);
                 beamRay.origin += 1f * beamRay.direction;
                 return beamRay;
             }
