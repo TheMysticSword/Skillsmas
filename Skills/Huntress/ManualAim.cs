@@ -466,8 +466,6 @@ namespace Skillsmas.Skills.Huntress
                 AkSoundEngine.StopPlayingID(loopSoundInstanceId);
                 if (!outer.destroying)
                 {
-                    // PlayAnimation("Gesture, Override", "FireSeekingShot", "FireSeekingShot.playbackRate", 0.3f);
-                    // PlayAnimation("Gesture, Additive", "FireSeekingShot", "FireSeekingShot.playbackRate", 0.3f);
                     PlayHuntressReleaseAnimation("Gesture, Override");
                     PlayHuntressReleaseAnimation("Gesture, Additive");
                     if (isAuthority) FireArrowAuthority();
