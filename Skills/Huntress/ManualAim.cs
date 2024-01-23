@@ -449,7 +449,7 @@ namespace Skillsmas.Skills.Huntress
                     position = aimRay.origin,
                     rotation = Util.QuaternionSafeLookRotation(aimRay.direction),
                     owner = gameObject,
-                    force = 800f * charge,
+                    force = 400f * charge,
                     projectilePrefab = charge < 1f ? projectilePrefab : projectileChargedPrefab
                 };
                 ProjectileManager.instance.FireProjectile(fireProjectileInfo);
