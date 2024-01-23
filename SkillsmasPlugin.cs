@@ -33,7 +33,7 @@ namespace Skillsmas
     {
         public const string PluginGUID = "com.themysticsword.skillsmas";
         public const string PluginName = "Skillsmas";
-        public const string PluginVersion = "1.3.1";
+        public const string PluginVersion = "1.3.2";
 
         public static System.Reflection.Assembly executingAssembly;
         internal static System.Type declaringType;

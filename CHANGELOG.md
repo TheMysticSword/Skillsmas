@@ -1,3 +1,14 @@
+## 1.3.2
+* Huntress: Take Aim:
+	* Projectile Speed: ~~120m/s~~ ⇒ 160m/s
+		* Can now be configured
+	* Reduced enemy knockback force
+* Added an "Unlock Rotation" option for Engineer's Energy Shield
+* Added a "Stream Cancelled From Sprinting" option for Artificer's Concentrated Nano-Stream
+* Improved the aiming accuracy of Artificer's Concentrated Nano-Stream
+* Fixed wrong cooldowns on certain Artificer skills:
+	* Flash Frost: ~~9s~~ ⇒ 8s
+	* Superbolide: ~~12s~~ ⇒ 8s
 ## 1.3.1
 * Updated Simplified Chinese translation
 ## 1.3.0
