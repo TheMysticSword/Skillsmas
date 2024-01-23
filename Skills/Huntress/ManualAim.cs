@@ -43,6 +43,7 @@ namespace Skillsmas.Skills.Huntress
             useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry
         );
         public static ConfigOptions.ConfigurableValue<float> procCoefficient;
+        public static ConfigOptions.ConfigurableValue<float> projectileSpeed;
         public static ConfigOptions.ConfigurableValue<bool> useSideCamera = ConfigOptions.ConfigurableValue.CreateBool(
             SkillsmasPlugin.PluginGUID,
             SkillsmasPlugin.PluginName,
@@ -170,6 +171,21 @@ namespace Skillsmas.Skills.Huntress
                 {
                     projectilePrefab.GetComponent<ProjectileController>().procCoefficient = newValue;
                     projectileChargedPrefab.GetComponent<ProjectileController>().procCoefficient = newValue;
+                }
+            );
+
+            projectileSpeed = ConfigOptions.ConfigurableValue.CreateFloat(
+                SkillsmasPlugin.PluginGUID,
+                SkillsmasPlugin.PluginName,
+                SkillsmasPlugin.config,
+                "Huntress: Take Aim",
+                "Projectile Speed",
+                160f,
+                useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
+                onChanged: (newValue) =>
+                {
+                    projectilePrefab.GetComponent<ProjectileSimple>().desiredForwardSpeed = newValue;
+                    projectileChargedPrefab.GetComponent<ProjectileSimple>().desiredForwardSpeed = newValue;
                 }
             );
 
