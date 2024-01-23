@@ -198,7 +198,7 @@ namespace Skillsmas.Skills.Engi
             }
         }
 
-        public class ChannelEnergyShield : EntityStates.BaseState
+        public class ChannelEnergyShield : EntityStates.BaseSkillState
         {
             public static GameObject endEffectPrefab;
 
@@ -218,7 +218,7 @@ namespace Skillsmas.Skills.Engi
             public override void FixedUpdate()
             {
                 base.FixedUpdate();
-                if (isAuthority && (!inputBank || !inputBank.skill1.down))
+                if (isAuthority && !IsKeyDownAuthority())
                 {
                     outer.SetNextStateToMain();
                     return;
