@@ -1,3 +1,8 @@
+## 1.3.4
+* Renamed the "General" section of the config to "! General !" to make it appear at the top of the mod manager's section list
+## 1.3.3
+* Artificer: Cryo Bolt:
+	* Lifetime: ~~0.2s~~ ⇒ 0.3s
 ## 1.3.2
 * Huntress: Take Aim:
 	* Projectile Speed: ~~120m/s~~ ⇒ 160m/s
