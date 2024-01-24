@@ -63,14 +63,15 @@ namespace Skillsmas
             executingAssembly = System.Reflection.Assembly.GetExecutingAssembly();
             declaringType = System.Reflection.MethodBase.GetCurrentMethod().DeclaringType;
 
+            var ignoreBalanceConfigOld = config.Bind("General", "Ignore Balance Changes", true, "Old value that has no effect anymore. Will be removed in the future. Use the Ignore Balance Changes option in the ! General ! section instead.");
             ignoreBalanceConfig = ConfigOptions.ConfigurableValue.CreateBool(
                 PluginGUID,
                 PluginName,
                 config,
-                "General",
+                "! General !",
                 "Ignore Balance Changes",
-                true,
-                "If true, most balance-related number values won't be changed by configs, and will use recommended default values."
+                ignoreBalanceConfigOld.Value,
+                "If true, most of the balance-related number values won't be changed by configs, and will use recommended default values."
             );
 
             if (MysticsRisky2Utils.SoftDependencies.SoftDependencyManager.RiskOfOptionsDependency.enabled)
