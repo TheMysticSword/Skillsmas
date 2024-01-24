@@ -135,7 +135,7 @@ namespace Skillsmas.Skills.Mage.Ice
                 SkillsmasPlugin.config,
                 "Artificer: Cryo Bolt",
                 "Lifetime",
-                0.2f,
+                0.3f,
                 useDefaultValueConfigEntry: SkillsmasPlugin.ignoreBalanceConfig.bepinexConfigEntry,
                 onChanged: (newValue) =>
                 {
